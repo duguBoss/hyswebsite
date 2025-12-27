@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown工具集 - 全能处理平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+        }
+
+        .tool-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .tool-title {
+            flex: 1;
+        }
+
+        .tool-title h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .tool-title .subtitle {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .tool-description {
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .tool-features {
+            margin-bottom: 25px;
+        }
+
+        .tool-features h4 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            padding: 5px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #666;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .tool-actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #333;
+            border: 2px solid #e9ecef;
+        }
+
+        .btn-secondary:hover {
+            background: #e9ecef;
+            transform: translateY(-2px);
+        }
+
+        .demo-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .demo-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .demo-title h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .demo-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .input-area, .output-area {
+            position: relative;
+        }
+
+        .input-area h4, .output-area h4 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .demo-textarea {
+            width: 100%;
+            height: 300px;
+            padding: 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+
+        .demo-textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .demo-output {
+            width: 100%;
+            height: 300px;
+            padding: 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            background: #f8f9fa;
+            overflow-y: auto;
+            font-size: 14px;
+        }
+
+        .format-selector {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .format-selector select {
+            padding: 10px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .stats-panel {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .processing-indicator {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+
+        .processing-indicator.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .demo-area {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .tool-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-markdown"></i> Markdown工具集</h1>
+            <p>全能Markdown处理平台 - 解析、转换、展示一站式解决方案</p>
+        </div>
+
+        <div class="tools-grid">
+            <!-- AI工具展示工具 -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="tool-title">
+                        <h3>AI工具展示器</h3>
+                        <div class="subtitle">Markdown转可视化工具展示</div>
+                    </div>
+                </div>
+                <div class="tool-description">
+                    将AI工具集的Markdown文档转换为美观的卡片式展示界面，支持分类浏览、搜索筛选、响应式布局等高级功能。
+                </div>
+                <div class="tool-features">
+                    <h4>核心功能：</h4>
+                    <ul class="feature-list">
+                        <li>Markdown表格解析与数据提取</li>
+                        <li>智能分类与标签系统</li>
+                        <li>实时搜索与筛选功能</li>
+                        <li>响应式卡片布局设计</li>
+                        <li>图标自动匹配与错误处理</li>
+                        <li>本地存储缓存机制</li>
+                    </ul>
+                </div>
+                <div class="tool-actions">
+                    <a href="enterprise_ai_tools.html" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> 访问工具
+                    </a>
+                    <button class="btn btn-secondary" onclick="showDemo('ai-tools')">
+                        <i class="fas fa-play"></i> 查看演示
+                    </button>
+                </div>
+            </div>
+
+            <!-- Markdown转HTML转换器 -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="tool-title">
+                        <h3>Markdown转HTML转换器</h3>
+                        <div class="subtitle">批量Markdown文档转换工具</div>
+                    </div>
+                </div>
+                <div class="tool-description">
+                    强大的Markdown到HTML转换引擎，支持多种输出格式（卡片、列表、网格布局），提供批量处理能力和详细的转换统计。
+                </div>
+                <div class="tool-features">
+                    <h4>核心功能：</h4>
+                    <ul class="feature-list">
+                        <li>多种输出格式支持（卡片/列表/网格）</li>
+                        <li>批量文件处理与进度显示</li>
+                        <li>智能Markdown解析与错误处理</li>
+                        <li>转换统计与性能监控</li>
+                        <li>拖拽上传与文件管理</li>
+                        <li>实时预览与代码生成</li>
+                    </ul>
+                </div>
+                <div class="tool-actions">
+                    <a href="batch_converter_demo.html" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> 访问工具
+                    </a>
+                    <button class="btn btn-secondary" onclick="showDemo('converter')">
+                        <i class="fas fa-play"></i> 查看演示
+                    </button>
+                </div>
+            </div>
+
+            <!-- Markdown数据加载器 -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="tool-title">
+                        <h3>Markdown数据加载器</h3>
+                        <div class="subtitle">智能数据加载与缓存系统</div>
+                    </div>
+                </div>
+                <div class="tool-description">
+                    专业的Markdown文件加载器，具备错误处理、数据缓存、备用数据机制，确保数据加载的稳定性和可靠性。
+                </div>
+                <div class="tool-features">
+                    <h4>核心功能：</h4>
+                    <ul class="feature-list">
+                        <li>异步数据加载与错误处理</li>
+                        <li>本地存储缓存机制</li>
+                        <li>备用数据自动切换</li>
+                        <li>加载状态管理与反馈</li>
+                        <li>数据验证与格式检查</li>
+                        <li>性能优化与内存管理</li>
+                    </ul>
+                </div>
+                <div class="tool-actions">
+                    <button class="btn btn-primary" onclick="loadMarkdownData()">
+                        <i class="fas fa-download"></i> 加载数据
+                    </button>
+                    <button class="btn btn-secondary" onclick="showDemo('loader')">
+                        <i class="fas fa-play"></i> 查看演示
+                    </button>
+                </div>
+            </div>
+
+            <!-- 通用Markdown解析器 -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="tool-title">
+                        <h3>通用Markdown解析器</h3>
+                        <div class="subtitle">多格式Markdown解析引擎</div>
+                    </div>
+                </div>
+                <div class="tool-description">
+                    灵活的Markdown解析引擎，支持表格、列表、标题等多种Markdown元素，提供结构化的数据输出和详细的解析统计。
+                </div>
+                <div class="tool-features">
+                    <h4>核心功能：</h4>
+                    <ul class="feature-list">
+                        <li>表格解析与数据提取</li>
+                        <li>多级标题结构识别</li>
+                        <li>列表与段落处理</li>
+                        <li>链接与图片提取</li>
+                        <li>自定义解析规则</li>
+                        <li>解析错误诊断与修复</li>
+                    </ul>
+                </div>
+                <div class="tool-actions">
+                    <button class="btn btn-primary" onclick="parseMarkdown()">
+                        <i class="fas fa-play"></i> 开始解析
+                    </button>
+                    <button class="btn btn-secondary" onclick="showDemo('parser')">
+                        <i class="fas fa-code"></i> 查看代码
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 演示区域 -->
+        <div class="demo-section" id="demoSection" style="display: none;">
+            <div class="demo-title">
+                <h2 id="demoTitle">工具演示</h2>
+                <p id="demoDescription">实时体验Markdown处理功能</p>
+            </div>
+
+            <div class="format-selector" id="formatSelector" style="display: none;">
+                <label for="outputFormat">输出格式：</label>
+                <select id="outputFormat" onchange="updateDemo()">
+                    <option value="card">卡片布局</option>
+                    <option value="list">列表布局</option>
+                    <option value="grid">网格布局</option>
+                </select>
+            </div>
+
+            <div class="demo-area">
+                <div class="input-area">
+                    <h4><i class="fas fa-edit"></i> 输入Markdown</h4>
+                    <textarea class="demo-textarea" id="inputMarkdown" placeholder="在这里输入或粘贴Markdown内容...">## AI写作工具
+
+| 名称 | 网址 | 图标 | 描述 |
+|------|------|------|------|
+| 讯飞星火 | https://xinghuo.xfyun.cn | images/xinghuo.png | 科大讯飞推出的AI写作助手 |
+| 文心一言 | https://wenxin.baidu.com | images/wenxin.png | 百度推出的知识增强大语言模型 |
+
+## AI图像工具
+
+| 名称 | 网址 | 图标 | 描述 |
+|------|------|------|------|
+| Midjourney | https://midjourney.com | images/midjourney.png | AI图像生成工具 |
+| Stable Diffusion | https://stability.ai | images/sd.png | 开源AI图像生成模型 |</textarea>
+                </div>
+                <div class="output-area">
+                    <h4><i class="fas fa-eye"></i> 输出结果</h4>
+                    <div class="demo-output" id="outputResult">
+                        处理结果将在这里显示...
+                    </div>
+                </div>
+            </div>
+
+            <div class="processing-indicator" id="processingIndicator">
+                <div class="spinner"></div>
+                <p>正在处理中...</p>
+            </div>
+
+            <div class="tool-actions" style="text-align: center;">
+                <button class="btn btn-primary" onclick="runDemo()">
+                    <i class="fas fa-play"></i> 运行演示
+                </button>
+                <button class="btn btn-secondary" onclick="clearDemo()">
+                    <i class="fas fa-eraser"></i> 清空
+                </button>
+                <button class="btn btn-secondary" onclick="loadSample()">
+                    <i class="fas fa-file-import"></i> 加载示例
+                </button>
+            </div>
+
+            <div class="stats-panel" id="statsPanel" style="display: none;">
+                <h4><i class="fas fa-chart-bar"></i> 处理统计</h4>
+                <div class="stats-grid" id="statsGrid">
+                    <!-- 统计信息将在这里显示 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Markdown工具集 - 让Markdown处理更简单、更高效</p>
+    </div>
+
+    <script>
+        // 全局变量
+        let currentDemo = '';
+        let converter = null;
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 这里可以初始化转换器实例
+            if (typeof MarkdownToHTMLConverter !== 'undefined') {
+                converter = new MarkdownToHTMLConverter();
+            }
+        });
+
+        // 显示演示
+        function showDemo(type) {
+            currentDemo = type;
+            const demoSection = document.getElementById('demoSection');
+            const demoTitle = document.getElementById('demoTitle');
+            const demoDescription = document.getElementById('demoDescription');
+            const formatSelector = document.getElementById('formatSelector');
+
+            demoSection.style.display = 'block';
+            demoSection.scrollIntoView({ behavior: 'smooth' });
+
+            switch(type) {
+                case 'ai-tools':
+                    demoTitle.textContent = 'AI工具展示器演示';
+                    demoDescription.textContent = '将Markdown格式的AI工具数据转换为美观的卡片展示界面';
+                    formatSelector.style.display = 'none';
+                    break;
+                case 'converter':
+                    demoTitle.textContent = 'Markdown转HTML转换器演示';
+                    demoDescription.textContent = '体验强大的Markdown到HTML转换功能，支持多种输出格式';
+                    formatSelector.style.display = 'block';
+                    break;
+                case 'loader':
+                    demoTitle.textContent = 'Markdown数据加载器演示';
+                    demoDescription.textContent = '演示智能数据加载、缓存和错误处理机制';
+                    formatSelector.style.display = 'none';
+                    break;
+                case 'parser':
+                    demoTitle.textContent = '通用Markdown解析器演示';
+                    demoDescription.textContent = '展示灵活的Markdown解析功能和结构化数据输出';
+                    formatSelector.style.display = 'none';
+                    break;
+            }
+        }
+
+        // 运行演示
+        function runDemo() {
+            const input = document.getElementById('inputMarkdown').value;
+            const output = document.getElementById('outputResult');
+            const processingIndicator = document.getElementById('processingIndicator');
+            const statsPanel = document.getElementById('statsPanel');
+
+            if (!input.trim()) {
+                alert('请输入Markdown内容');
+                return;
+            }
+
+            // 显示处理指示器
+            processingIndicator.classList.add('active');
+            output.innerHTML = '处理中...';
+
+            // 模拟异步处理
+            setTimeout(() => {
+                try {
+                    let result = '';
+                    let stats = {};
+
+                    switch(currentDemo) {
+                        case 'ai-tools':
+                            result = processAiTools(input);
+                            break;
+                        case 'converter':
+                            const format = document.getElementById('outputFormat').value;
+                            result = processConverter(input, format);
+                            break;
+                        case 'loader':
+                            result = processLoader(input);
+                            break;
+                        case 'parser':
+                            const parseResult = processParser(input);
+                            result = parseResult.html;
+                            stats = parseResult.stats;
+                            break;
+                        default:
+                            result = processDefault(input);
+                    }
+
+                    output.innerHTML = result;
+                    
+                    // 显示统计信息
+                    if (Object.keys(stats).length > 0) {
+                        displayStats(stats);
+                        statsPanel.style.display = 'block';
+                    }
+
+                } catch (error) {
+                    output.innerHTML = `<div style="color: red;">处理错误: ${error.message}</div>`;
+                } finally {
+                    processingIndicator.classList.remove('active');
+                }
+            }, 1000);
+        }
+
+        // AI工具处理
+        function processAiTools(input) {
+            const lines = input.split('\n');
+            let html = '<div class="ai-tools-result">';
+            let currentCategory = '';
+
+            for (const line of lines) {
+                if (line.startsWith('## ')) {
+                    if (currentCategory) html += '</div>';
+                    currentCategory = line.replace('## ', '').trim();
+                    html += `<div class="category-section"><h3>${currentCategory}</h3>`;
+                } else if (line.includes('|') && !line.includes('---')) {
+                    const parts = line.split('|').map(part => part.trim()).filter(part => part);
+                    if (parts.length >= 4) {
+                        const [name, url, icon, description] = parts;
+                        html += `
+                            <div class="tool-card-result">
+                                <div class="tool-header">
+                                    <img src="${icon}" alt="${name}" class="tool-icon-result">
+                                    <div class="tool-info">
+                                        <div class="tool-name">${name}</div>
+                                        <a href="${url}" target="_blank" class="tool-url">${url}</a>
+                                    </div>
+                                </div>
+                                <div class="tool-description">${description}</div>
+                            </div>
+                        `;
+                    }
+                }
+            }
+
+            html += '</div></div>';
+            
+            // 添加样式
+            const style = `
+                <style>
+                    .ai-tools-result { font-family: Arial, sans-serif; }
+                    .category-section { margin-bottom: 30px; }
+                    .category-section h3 { color: #667eea; margin-bottom: 15px; }
+                    .tool-card-result { 
+                        background: white; 
+                        border: 1px solid #e9ecef; 
+                        border-radius: 8px; 
+                        padding: 15px; 
+                        margin-bottom: 15px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                    }
+                    .tool-header { display: flex; align-items: center; margin-bottom: 10px; }
+                    .tool-icon-result { width: 40px; height: 40px; margin-right: 15px; border-radius: 8px; }
+                    .tool-name { font-weight: bold; color: #333; }
+                    .tool-url { color: #666; font-size: 0.9rem; text-decoration: none; }
+                    .tool-url:hover { color: #667eea; }
+                    .tool-description { color: #555; line-height: 1.5; }
+                </style>
+            `;
+            
+            return style + html;
+        }
+
+        // 转换器处理
+        function processConverter(input, format) {
+            const lines = input.split('\n');
+            let html = '';
+
+            switch(format) {
+                case 'card':
+                    html = processCardFormat(lines);
+                    break;
+                case 'list':
+                    html = processListFormat(lines);
+                    break;
+                case 'grid':
+                    html = processGridFormat(lines);
+                    break;
+            }
+
+            return html;
+        }
+
+        // 卡片格式
+        function processCardFormat(lines) {
+            let html = '<div class="card-format">';
+            let currentCategory = '';
+
+            for (const line of lines) {
+                if (line.startsWith('## ')) {
+                    if (currentCategory) html += '</div>';
+                    currentCategory = line.replace('## ', '').trim();
+                    html += `<div class="category-group"><h3>${currentCategory}</h3><div class="cards-container">`;
+                } else if (line.includes('|') && !line.includes('---')) {
+                    const parts = line.split('|').map(part => part.trim()).filter(part => part);
+                    if (parts.length >= 4) {
+                        const [name, url, icon, description] = parts;
+                        html += `
+                            <div class="card-item">
+                                <img src="${icon}" alt="${name}" class="card-icon">
+                                <h4>${name}</h4>
+                                <p>${description}</p>
+                                <a href="${url}" target="_blank" class="card-link">访问</a>
+                            </div>
+                        `;
+                    }
+                }
+            }
+
+            html += '</div></div></div>';
+            return addCardStyles() + html;
+        }
+
+        // 列表格式
+        function processListFormat(lines) {
+            let html = '<div class="list-format"><ul class="tool-list">';
+
+            for (const line of lines) {
+                if (line.includes('|') && !line.includes('---') && !line.includes('名称')) {
+                    const parts = line.split('|').map(part => part.trim()).filter(part => part);
+                    if (parts.length >= 4) {
+                        const [name, url, icon, description] = parts;
+                        html += `
+                            <li class="tool-list-item">
+                                <img src="${icon}" alt="${name}" class="list-icon">
+                                <div class="list-content">
+                                    <h4>${name}</h4>
+                                    <p>${description}</p>
+                                    <a href="${url}" target="_blank">${url}</a>
+                                </div>
+                            </li>
+                        `;
+                    }
+                }
+            }
+
+            html += '</ul></div>';
+            return addListStyles() + html;
+        }
+
+        // 网格格式
+        function processGridFormat(lines) {
+            let html = '<div class="grid-format"><div class="tool-grid">';
+
+            for (const line of lines) {
+                if (line.includes('|') && !line.includes('---') && !line.includes('名称')) {
+                    const parts = line.split('|').map(part => part.trim()).filter(part => part);
+                    if (parts.length >= 4) {
+                        const [name, url, icon, description] = parts;
+                        html += `
+                            <div class="grid-item">
+                                <img src="${icon}" alt="${name}" class="grid-icon">
+                                <h4>${name}</h4>
+                                <p>${description}</p>
+                                <a href="${url}" target="_blank" class="grid-link">访问</a>
+                            </div>
+                        `;
+                    }
+                }
+            }
+
+            html += '</div></div>';
+            return addGridStyles() + html;
+        }
+
+        // 添加样式函数
+        function addCardStyles() {
+            return `
+                <style>
+                    .card-format { font-family: Arial, sans-serif; }
+                    .category-group { margin-bottom: 30px; }
+                    .category-group h3 { color: #667eea; margin-bottom: 15px; }
+                    .cards-container { display: flex; flex-wrap: wrap; gap: 15px; }
+                    .card-item { 
+                        background: white; 
+                        border: 1px solid #e9ecef; 
+                        border-radius: 12px; 
+                        padding: 20px; 
+                        width: 250px;
+                        text-align: center;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                        transition: transform 0.3s ease;
+                    }
+                    .card-item:hover { transform: translateY(-5px); }
+                    .card-icon { width: 60px; height: 60px; margin-bottom: 15px; border-radius: 12px; }
+                    .card-item h4 { color: #333; margin-bottom: 10px; }
+                    .card-item p { color: #666; font-size: 0.9rem; margin-bottom: 15px; }
+                    .card-link { display: inline-block; padding: 8px 16px; background: #667eea; color: white; text-decoration: none; border-radius: 6px; }
+                    .card-link:hover { background: #5a6fd8; }
+                </style>
+            `;
+        }
+
+        function addListStyles() {
+            return `
+                <style>
+                    .list-format { font-family: Arial, sans-serif; }
+                    .tool-list { list-style: none; padding: 0; }
+                    .tool-list-item { 
+                        display: flex; 
+                        align-items: center; 
+                        padding: 20px; 
+                        border-bottom: 1px solid #e9ecef;
+                        background: white;
+                        transition: background 0.3s ease;
+                    }
+                    .tool-list-item:hover { background: #f8f9fa; }
+                    .list-icon { width: 50px; height: 50px; margin-right: 20px; border-radius: 10px; }
+                    .list-content { flex: 1; }
+                    .list-content h4 { color: #333; margin-bottom: 5px; }
+                    .list-content p { color: #666; margin-bottom: 5px; }
+                    .list-content a { color: #667eea; text-decoration: none; }
+                    .list-content a:hover { text-decoration: underline; }
+                </style>
+            `;
+        }
+
+        function addGridStyles() {
+            return `
+                <style>
+                    .grid-format { font-family: Arial, sans-serif; }
+                    .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+                    .grid-item { 
+                        background: white; 
+                        border: 1px solid #e9ecef; 
+                        border-radius: 12px; 
+                        padding: 20px; 
+                        text-align: center;
+                        transition: all 0.3s ease;
+                    }
+                    .grid-item:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+                    .grid-icon { width: 50px; height: 50px; margin-bottom: 15px; border-radius: 10px; }
+                    .grid-item h4 { color: #333; margin-bottom: 10px; }
+                    .grid-item p { color: #666; font-size: 0.9rem; margin-bottom: 15px; }
+                    .grid-link { display: inline-block; padding: 8px 16px; background: #667eea; color: white; text-decoration: none; border-radius: 6px; }
+                    .grid-link:hover { background: #5a6fd8; }
+                </style>
+            `;
+        }
+
+        // 数据加载器处理
+        function processLoader(input) {
+            return `
+                <div class="loader-result">
+                    <h3>数据加载模拟</h3>
+                    <div class="loader-steps">
+                        <div class="step">
+                            <i class="fas fa-search"></i>
+                            <span>正在查找Markdown文件...</span>
+                            <span class="status success">✓ 找到文件</span>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-download"></i>
+                            <span>正在下载数据...</span>
+                            <span class="status success">✓ 下载完成</span>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-cogs"></i>
+                            <span>正在解析内容...</span>
+                            <span class="status success">✓ 解析成功</span>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-save"></i>
+                            <span>正在缓存数据...</span>
+                            <span class="status success">✓ 缓存完成</span>
+                        </div>
+                    </div>
+                    <div class="loader-stats">
+                        <h4>加载统计</h4>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="label">文件大小：</span>
+                                <span class="value">${(input.length / 1024).toFixed(2)} KB</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">行数：</span>
+                                <span class="value">${input.split('\n').length} 行</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">处理时间：</span>
+                                <span class="value">${(Math.random() * 1000 + 100).toFixed(0)} ms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .loader-result { font-family: Arial, sans-serif; }
+                    .loader-steps { margin-bottom: 20px; }
+                    .step { 
+                        display: flex; 
+                        align-items: center; 
+                        margin-bottom: 15px; 
+                        padding: 15px; 
+                        background: #f8f9fa; 
+                        border-radius: 8px;
+                        border-left: 4px solid #667eea;
+                    }
+                    .step i { 
+                        width: 20px; 
+                        color: #667eea; 
+                        margin-right: 15px; 
+                        text-align: center;
+                    }
+                    .step .status { 
+                        margin-left: auto; 
+                        font-weight: bold; 
+                        color: #4CAF50; 
+                    }
+                    .loader-stats { background: white; padding: 20px; border-radius: 8px; border: 1px solid #e9ecef; }
+                    .loader-stats h4 { margin-bottom: 15px; color: #333; }
+                    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+                    .stat { display: flex; justify-content: space-between; padding: 10px; background: #f8f9fa; border-radius: 6px; }
+                    .stat .label { color: #666; }
+                    .stat .value { color: #333; font-weight: bold; }
+                </style>
+            `;
+        }
+
+        // 解析器处理
+        function processParser(input) {
+            const lines = input.split('\n');
+            let categories = 0;
+            let tools = 0;
+            let tables = 0;
+            let links = 0;
+
+            for (const line of lines) {
+                if (line.startsWith('## ')) {
+                    categories++;
+                } else if (line.includes('|') && !line.includes('---') && line.includes('http')) {
+                    tools++;
+                    const urlMatches = line.match(/https?:\/\/[^\s\|]+/g);
+                    if (urlMatches) links += urlMatches.length;
+                } else if (line.includes('|') && line.includes('---')) {
+                    tables++;
+                }
+            }
+
+            const html = `
+                <div class="parser-result">
+                    <h3>解析结果</h3>
+                    <div class="parse-tree">
+                        ${generateParseTree(input)}
+                    </div>
+                </div>
+                <style>
+                    .parser-result { font-family: Arial, sans-serif; }
+                    .parse-tree { background: white; padding: 20px; border-radius: 8px; border: 1px solid #e9ecef; }
+                    .tree-node { margin-bottom: 10px; }
+                    .tree-node .label { 
+                        display: inline-block; 
+                        padding: 5px 10px; 
+                        background: #667eea; 
+                        color: white; 
+                        border-radius: 4px; 
+                        font-size: 0.9rem;
+                        margin-right: 10px;
+                    }
+                    .tree-node .content { color: #333; }
+                    .tree-children { margin-left: 30px; margin-top: 10px; }
+                </style>
+            `;
+
+            return {
+                html: html,
+                stats: {
+                    categories: categories,
+                    tools: tools,
+                    tables: tables,
+                    links: links,
+                    lines: lines.length,
+                    size: input.length
+                }
+            };
+        }
+
+        // 生成解析树
+        function generateParseTree(input) {
+            const lines = input.split('\n');
+            let tree = '';
+            let currentLevel = 0;
+
+            for (const line of lines) {
+                if (line.trim() === '') continue;
+
+                if (line.startsWith('## ')) {
+                    tree += `
+                        <div class="tree-node">
+                            <span class="label">标题</span>
+                            <span class="content">${line.replace('## ', '')}</span>
+                        </div>
+                    `;
+                } else if (line.includes('|') && !line.includes('---')) {
+                    const parts = line.split('|').map(part => part.trim()).filter(part => part);
+                    if (parts.length >= 4) {
+                        tree += `
+                            <div class="tree-node">
+                                <span class="label">工具</span>
+                                <span class="content">${parts[0]}</span>
+                                <div class="tree-children">
+                                    <div class="tree-node">
+                                        <span class="label">URL</span>
+                                        <span class="content">${parts[1]}</span>
+                                    </div>
+                                    <div class="tree-node">
+                                        <span class="label">描述</span>
+                                        <span class="content">${parts[3]}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+            }
+
+            return tree;
+        }
+
+        // 默认处理
+        function processDefault(input) {
+            return `
+                <div class="default-result">
+                    <h3>处理完成</h3>
+                    <p>输入内容已处理，共 ${input.length} 个字符，${input.split('\n').length} 行。</p>
+                    <div class="result-preview">
+                        <h4>内容预览：</h4>
+                        <pre>${input.substring(0, 500)}${input.length > 500 ? '...' : ''}</pre>
+                    </div>
+                </div>
+                <style>
+                    .default-result { font-family: Arial, sans-serif; }
+                    .result-preview { background: white; padding: 15px; border-radius: 8px; border: 1px solid #e9ecef; margin-top: 15px; }
+                    .result-preview pre { white-space: pre-wrap; word-wrap: break-word; color: #333; }
+                </style>
+            `;
+        }
+
+        // 显示统计信息
+        function displayStats(stats) {
+            const statsGrid = document.getElementById('statsGrid');
+            
+            const statItems = [
+                { label: '分类数量', value: stats.categories || 0 },
+                { label: '工具数量', value: stats.tools || 0 },
+                { label: '表格数量', value: stats.tables || 0 },
+                { label: '链接数量', value: stats.links || 0 },
+                { label: '总行数', value: stats.lines || 0 },
+                { label: '文件大小', value: `${((stats.size || 0) / 1024).toFixed(1)} KB` }
+            ];
+
+            statsGrid.innerHTML = statItems.map(item => `
+                <div class="stat-item">
+                    <div class="stat-value">${item.value}</div>
+                    <div class="stat-label">${item.label}</div>
+                </div>
+            `).join('');
+        }
+
+        // 清空演示
+        function clearDemo() {
+            document.getElementById('inputMarkdown').value = '';
+            document.getElementById('outputResult').innerHTML = '处理结果将在这里显示...';
+            document.getElementById('statsPanel').style.display = 'none';
+        }
+
+        // 加载示例
+        function loadSample() {
+            const sample = `## AI写作工具
+
+| 名称 | 网址 | 图标 | 描述 |
+|------|------|------|------|
+| 讯飞星火 | https://xinghuo.xfyun.cn | images/xinghuo.png | 科大讯飞推出的AI写作助手，支持多轮对话和文本生成 |
+| 文心一言 | https://wenxin.baidu.com | images/wenxin.png | 百度推出的知识增强大语言模型，具备强大的中文理解能力 |
+
+## AI图像工具
+
+| 名称 | 网址 | 图标 | 描述 |
+|------|------|------|------|
+| Midjourney | https://midjourney.com | images/midjourney.png | 知名的AI图像生成工具，支持多种艺术风格 |
+| Stable Diffusion | https://stability.ai | images/sd.png | 开源的AI图像生成模型，支持本地部署和定制 |`;
+
+            document.getElementById('inputMarkdown').value = sample;
+        }
+
+        // 更新演示
+        function updateDemo() {
+            if (currentDemo === 'converter' && document.getElementById('inputMarkdown').value.trim()) {
+                runDemo();
+            }
+        }
+
+        // 加载Markdown数据
+        function loadMarkdownData() {
+            showDemo('loader');
+            runDemo();
+        }
+
+        // 解析Markdown
+        function parseMarkdown() {
+            showDemo('parser');
+            runDemo();
+        }
+    </script>
+</body>
+</html>

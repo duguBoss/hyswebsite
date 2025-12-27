@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑曜石科技工坊 - 设计软件</title>
+    <meta name="keywords" content="黑曜石科技工坊, 设计软件, 设计工具, 图形设计, 创意设计">
+    <meta name="description" content="黑曜石科技工坊 - 专业的设计软件集合平台，提供各类设计工具的分类整理和展示">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="obsidian_workshop.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部导航栏 -->
+        <nav class="top-nav">
+            <a href="obsidian_workshop.html" class="logo">
+                <i class="fas fa-gem logo-icon"></i>
+                <span class="logo-text">黑曜石科技工坊</span>
+            </a>
+            <div class="nav-links">
+                <a href="obsidian_workshop.html" class="nav-link">AI软件</a>
+                <a href="design_software.html" class="nav-link">设计软件</a>
+            </div>
+        </nav>
+
+        <!-- 主内容区域 -->
+        <div class="main-content">
+            <!-- 左侧导航 -->
+            <aside class="sidebar">
+                <ul class="sidebar-nav">
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-category="all">
+                            <i class="fas fa-th-large nav-icon"></i>
+                            <span>全部软件</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-category="图形设计">
+                            <i class="fas fa-palette nav-icon"></i>
+                            <span>图形设计</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-category="UI设计">
+                            <i class="fas fa-mobile-alt nav-icon"></i>
+                            <span>UI设计</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-category="3D设计">
+                            <i class="fas fa-cube nav-icon"></i>
+                            <span>3D设计</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-category="视频编辑">
+                            <i class="fas fa-video nav-icon"></i>
+                            <span>视频编辑</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-category="音频处理">
+                            <i class="fas fa-music nav-icon"></i>
+                            <span>音频处理</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-category="原型设计">
+                            <i class="fas fa-pencil-ruler nav-icon"></i>
+                            <span>原型设计</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-category="矢量图形">
+                            <i class="fas fa-draw-polygon nav-icon"></i>
+                            <span>矢量图形</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- 右侧内容区域 -->
+            <main class="content-area">
+                <!-- 页面标题 -->
+                <h1 class="page-title">
+                    <i class="fas fa-paint-brush"></i>
+                    设计软件集合
+                </h1>
+
+                <!-- 统计信息 -->
+                <div class="stats">
+                    <div class="stat-card">
+                        <span class="stat-number" id="totalTools">0</span>
+                        <div class="stat-label">软件总数</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="categoriesCount">0</span>
+                        <div class="stat-label">分类数量</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="visibleTools">0</span>
+                        <div class="stat-label">当前显示</div>
+                    </div>
+                </div>
+
+                <!-- 搜索栏 -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="搜索设计软件..." id="searchInput">
+                    </div>
+                </div>
+
+                <!-- 图形设计 -->
+                <section class="category-section" data-category="图形设计">
+                    <h2 class="category-title">
+                        <i class="fas fa-palette category-icon"></i>
+                        图形设计
+                    </h2>
+                    <div class="tools-grid">
+                        <!-- Photoshop -->
+                        <div class="tool-card" data-category="图形设计" data-name="Photoshop">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Photoshop" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Adobe Photoshop</div>
+                                    <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="tool-url">https://www.adobe.com/products/photoshop.html</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业图像处理软件，广泛应用于平面设计、摄影后期等领域。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">图形设计</span>
+                                <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Illustrator -->
+                        <div class="tool-card" data-category="图形设计" data-name="Illustrator">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Illustrator" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Adobe Illustrator</div>
+                                    <a href="https://www.adobe.com/products/illustrator.html" target="_blank" class="tool-url">https://www.adobe.com/products/illustrator.html</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业矢量图形编辑软件，用于创建Logo、插画、排版等。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">图形设计</span>
+                                <a href="https://www.adobe.com/products/illustrator.html" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- GIMP -->
+                        <div class="tool-card" data-category="图形设计" data-name="GIMP">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="GIMP" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">GIMP</div>
+                                    <a href="https://www.gimp.org/" target="_blank" class="tool-url">https://www.gimp.org/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">免费开源的图像处理软件，功能强大，支持多种文件格式。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">图形设计</span>
+                                <a href="https://www.gimp.org/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- UI设计 -->
+                <section class="category-section" data-category="UI设计">
+                    <h2 class="category-title">
+                        <i class="fas fa-mobile-alt category-icon"></i>
+                        UI设计
+                    </h2>
+                    <div class="tools-grid">
+                        <!-- Figma -->
+                        <div class="tool-card" data-category="UI设计" data-name="Figma">
+                            <div class="tool-header">
+                                <img src="images/figma-icon.png" alt="Figma" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Figma</div>
+                                    <a href="https://www.figma.com/" target="_blank" class="tool-url">https://www.figma.com/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">基于浏览器的UI设计工具，支持实时协作和原型设计。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">UI设计</span>
+                                <a href="https://www.figma.com/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Sketch -->
+                        <div class="tool-card" data-category="UI设计" data-name="Sketch">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Sketch" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Sketch</div>
+                                    <a href="https://www.sketch.com/" target="_blank" class="tool-url">https://www.sketch.com/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">Mac平台的UI设计工具，专为界面设计而生，插件生态丰富。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">UI设计</span>
+                                <a href="https://www.sketch.com/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Adobe XD -->
+                        <div class="tool-card" data-category="UI设计" data-name="Adobe XD">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Adobe XD" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Adobe XD</div>
+                                    <a href="https://www.adobe.com/products/xd.html" target="_blank" class="tool-url">https://www.adobe.com/products/xd.html</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">Adobe旗下的UI/UX设计工具，支持设计、原型和协作。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">UI设计</span>
+                                <a href="https://www.adobe.com/products/xd.html" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3D设计 -->
+                <section class="category-section" data-category="3D设计">
+                    <h2 class="category-title">
+                        <i class="fas fa-cube category-icon"></i>
+                        3D设计
+                    </h2>
+                    <div class="tools-grid">
+                        <!-- Blender -->
+                        <div class="tool-card" data-category="3D设计" data-name="Blender">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Blender" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Blender</div>
+                                    <a href="https://www.blender.org/" target="_blank" class="tool-url">https://www.blender.org/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">免费开源的3D创作套件，支持建模、动画、渲染等全流程。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">3D设计</span>
+                                <a href="https://www.blender.org/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 3ds Max -->
+                        <div class="tool-card" data-category="3D设计" data-name="3ds Max">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="3ds Max" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Autodesk 3ds Max</div>
+                                    <a href="https://www.autodesk.com/products/3ds-max/overview" target="_blank" class="tool-url">https://www.autodesk.com/products/3ds-max/overview</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业的3D建模、动画和渲染软件，广泛应用于游戏和影视行业。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">3D设计</span>
+                                <a href="https://www.autodesk.com/products/3ds-max/overview" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Maya -->
+                        <div class="tool-card" data-category="3D设计" data-name="Maya">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Maya" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Autodesk Maya</div>
+                                    <a href="https://www.autodesk.com/products/maya/overview" target="_blank" class="tool-url">https://www.autodesk.com/products/maya/overview</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业的3D动画和建模软件，用于影视、游戏和虚拟现实创作。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">3D设计</span>
+                                <a href="https://www.autodesk.com/products/maya/overview" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 视频编辑 -->
+                <section class="category-section" data-category="视频编辑">
+                    <h2 class="category-title">
+                        <i class="fas fa-video category-icon"></i>
+                        视频编辑
+                    </h2>
+                    <div class="tools-grid">
+                        <!-- Premiere Pro -->
+                        <div class="tool-card" data-category="视频编辑" data-name="Premiere Pro">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Premiere Pro" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Adobe Premiere Pro</div>
+                                    <a href="https://www.adobe.com/products/premiere.html" target="_blank" class="tool-url">https://www.adobe.com/products/premiere.html</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业视频编辑软件，广泛应用于电影、电视和网络视频制作。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">视频编辑</span>
+                                <a href="https://www.adobe.com/products/premiere.html" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- DaVinci Resolve -->
+                        <div class="tool-card" data-category="视频编辑" data-name="DaVinci Resolve">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="DaVinci Resolve" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">DaVinci Resolve</div>
+                                    <a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank" class="tool-url">https://www.blackmagicdesign.com/products/davinciresolve/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">集视频编辑、色彩校正、音频后期和视觉特效于一体的专业软件。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">视频编辑</span>
+                                <a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Final Cut Pro -->
+                        <div class="tool-card" data-category="视频编辑" data-name="Final Cut Pro">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Final Cut Pro" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Final Cut Pro</div>
+                                    <a href="https://www.apple.com/final-cut-pro/" target="_blank" class="tool-url">https://www.apple.com/final-cut-pro/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">Apple旗下的专业视频编辑软件，专为Mac平台优化。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">视频编辑</span>
+                                <a href="https://www.apple.com/final-cut-pro/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 音频处理 -->
+                <section class="category-section" data-category="音频处理">
+                    <h2 class="category-title">
+                        <i class="fas fa-music category-icon"></i>
+                        音频处理
+                    </h2>
+                    <div class="tools-grid">
+                        <!-- Audition -->
+                        <div class="tool-card" data-category="音频处理" data-name="Audition">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Audition" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Adobe Audition</div>
+                                    <a href="https://www.adobe.com/products/audition.html" target="_blank" class="tool-url">https://www.adobe.com/products/audition.html</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业音频编辑软件，用于音频录制、混音和音频修复。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">音频处理</span>
+                                <a href="https://www.adobe.com/products/audition.html" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Audacity -->
+                        <div class="tool-card" data-category="音频处理" data-name="Audacity">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Audacity" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Audacity</div>
+                                    <a href="https://www.audacityteam.org/" target="_blank" class="tool-url">https://www.audacityteam.org/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">免费开源的音频编辑软件，支持多轨录音和编辑。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">音频处理</span>
+                                <a href="https://www.audacityteam.org/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Logic Pro -->
+                        <div class="tool-card" data-category="音频处理" data-name="Logic Pro">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Logic Pro" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Logic Pro</div>
+                                    <a href="https://www.apple.com/logic-pro/" target="_blank" class="tool-url">https://www.apple.com/logic-pro/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">Apple旗下的专业音乐制作软件，用于音频录制、编辑和混音。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">音频处理</span>
+                                <a href="https://www.apple.com/logic-pro/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 原型设计 -->
+                <section class="category-section" data-category="原型设计">
+                    <h2 class="category-title">
+                        <i class="fas fa-pencil-ruler category-icon"></i>
+                        原型设计
+                    </h2>
+                    <div class="tools-grid">
+                        <!-- Axure RP -->
+                        <div class="tool-card" data-category="原型设计" data-name="Axure RP">
+                            <div class="tool-header">
+                                <img src="images/adobe-icon.png" alt="Axure RP" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">Axure RP</div>
+                                    <a href="https://www.axure.com/" target="_blank" class="tool-url">https://www.axure.com/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业的原型设计工具，用于创建交互式原型和规范文档。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">原型设计</span>
+                                <a href="https://www.axure.com/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- InVision -->
+                        <div class="tool-card" data-category="原型设计" data-name="InVision">
+                            <div class="tool-header">
+                                <img src="images/figma-icon.png" alt="InVision" class="tool-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4='">
+                                <div class="tool-info">
+                                    <div class="tool-name">InVision</div>
+                                    <a href="https://www.invisionapp.com/" target="_blank" class="tool-url">https://www.invisionapp.com/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">基于云的原型设计和协作平台，支持交互式原型和设计评审。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">原型设计</span>
+                                <a href="https://www.invisionapp.com/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Protopie -->
+                        <div class="tool-card" data-category="原型设计" data-name="Protopie">
+                            <div class="tool-header">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=" alt="Protopie" class="tool-icon">
+                                <div class="tool-info">
+                                    <div class="tool-name">Protopie</div>
+                                    <a href="https://www.protopie.io/" target="_blank" class="tool-url">https://www.protopie.io/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">无需编码的原型设计工具，用于创建高度交互的移动应用原型。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">原型设计</span>
+                                <a href="https://www.protopie.io/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 矢量图形 -->
+                <section class="category-section" data-category="矢量图形">
+                    <h2 class="category-title">
+                        <i class="fas fa-draw-polygon category-icon"></i>
+                        矢量图形
+                    </h2>
+                    <div class="tools-grid">
+                        <!-- CorelDRAW -->
+                        <div class="tool-card" data-category="矢量图形" data-name="CorelDRAW">
+                            <div class="tool-header">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=" alt="CorelDRAW" class="tool-icon">
+                                <div class="tool-info">
+                                    <div class="tool-name">CorelDRAW</div>
+                                    <a href="https://www.coreldraw.com/" target="_blank" class="tool-url">https://www.coreldraw.com/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业矢量图形设计软件，用于创建Logo、插画和排版。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">矢量图形</span>
+                                <a href="https://www.coreldraw.com/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Inkscape -->
+                        <div class="tool-card" data-category="矢量图形" data-name="Inkscape">
+                            <div class="tool-header">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=" alt="Inkscape" class="tool-icon">
+                                <div class="tool-info">
+                                    <div class="tool-name">Inkscape</div>
+                                    <a href="https://inkscape.org/" target="_blank" class="tool-url">https://inkscape.org/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">免费开源的矢量图形编辑软件，支持SVG格式。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">矢量图形</span>
+                                <a href="https://inkscape.org/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Affinity Designer -->
+                        <div class="tool-card" data-category="矢量图形" data-name="Affinity Designer">
+                            <div class="tool-header">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiMxZjM0NjAiLz48cGF0aCBkPSJNMjUgNEwyNSA0NkwyNSA0eiIgZmlsbD0iI2U5NDU2MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=" alt="Affinity Designer" class="tool-icon">
+                                <div class="tool-info">
+                                    <div class="tool-name">Affinity Designer</div>
+                                    <a href="https://affinity.serif.com/designer/" target="_blank" class="tool-url">https://affinity.serif.com/designer/</a>
+                                </div>
+                            </div>
+                            <div class="tool-description">专业矢量图形设计软件，支持macOS、Windows和iPad平台。</div>
+                            <div class="tool-footer">
+                                <span class="tool-category">矢量图形</span>
+                                <a href="https://affinity.serif.com/designer/" target="_blank" class="tool-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                    访问官网
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2024 黑曜石科技工坊. 专业的设计软件集合平台</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="obsidian_workshop.js"></script>
+</body>
+</html>

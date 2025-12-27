@@ -1,0 +1,3413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0026)http://www.qijishow.com -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>奇迹秀工具箱 - 设计师的百宝箱</title>
+    <meta name="Keywords" content="奇迹秀工具箱,UI设计工具,界面设计工具,设计师工具箱,奇迹秀,设计工具,奇迹秀工具箱-设计师的百宝箱">
+    <meta name="Description" content="奇迹秀工具箱分享设计师必备设计工具及各类设计辅助神器，提供了丰富的设计辅助功能,还整合了各种主流的设计资源,让设计师在创作过程中更加高效、顺手。">
+    <link rel="shortcut icon" href="../img/ico.ico" type="images/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/icon/fonts/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/media_time.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/commonn.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8" src="assets/js/page_context.js"></script>
+    
+<link rel="stylesheet" href="assets/css/master.css">
+<script type="text/javascript" src="assets/js/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<div id="pointer"></div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $(".side ul li").hover(function(){
+    $(this).find(".sidebox").stop().animate({"width":"90px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","line-height": "40px" ,"box-shadow": "rgb(0 0 0 / 51%) 0px 18px 20px -13px" ,"transform": "translate(0px, 1px)"})  
+  },function(){
+    $(this).find(".sidebox").stop().animate({"width":"50px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","line-height": "40px" ,"box-shadow": "rgb(0 0 0 / 51%) 0px 0px 0px 0px" ,"transform": "translate(0px, 1px)"}) 
+  });
+  
+});
+
+
+//回到顶部
+function goTop(){
+  $('html,body').animate({'scrollTop':0},600);
+}
+</script>
+<!-- 
+陪伴是最长情的告白
+最浪漫的事
+就是和你一起慢慢变老
+ -->
+
+<!-- qijishow.com Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?72901b05b1c13f850ab179d6326c1f75";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script>
+  function toggleContent() {
+    var content = document.getElementById("content");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }
+</script>
+   </head>
+<body>
+
+<script type="text/javascript">window.onload=getCSS();</script>
+
+<div class="test"></div>
+<div id="pagewrap">
+<div id="page"><a name="cygj" />
+<div id="header">
+<header>
+  <div class="container clearfix">
+    <h1 id="logobag">工具箱</h1><h1 id="logoqj"><a class="logo-title" href="https://www.qijishow.com/" target="_blank" >奇迹秀首页 ></a></h1>
+  <li style="  width: 40px;">
+      <a id="xinlang" href="https://www.qijishow.com/down/message.html" target="_blank" title="赞助">
+      <i class="icon iconfont icon-liuyan"></i></a>
+    </li>  
+
+    <li class="search bar8" style="margin-right: 20px;">
+         <form id="search_form">
+             <div class="bar8" style="margin-top: 6px;">
+              <i class="icon iconfont icon-sousuo" style="font-size: 24px;color: #9ea2a9;"></i>
+             <input id="bdcsMain" type="text" name="lname" placeholder="输入关键词搜索">
+                  <div class="qijishow-search-result"></div>
+             </div>
+        </form>
+    </li>
+
+<script>
+$( "#search_form" ).submit(function( event ) {
+  window.open('http://zhannei.baidu.com/cse/search?s=15272378007431883036&entry=1&q='+document.getElementById('bdcsMain').value)
+  event.preventDefault();
+});
+$( "#search_form_mobile" ).submit(function( event ) {
+  window.open('http://zhannei.baidu.com/cse/search?s=15272378007431883036&entry=1&q='+document.getElementById('bdcsMain-mobile').value)
+  event.preventDefault();
+});
+$("[name='search_btn']").click(function(event) {
+  window.open('http://zhannei.baidu.com/cse/search?s=15272378007431883036&entry=1&q='+document.getElementById('bdcsMain').value)
+});
+</script>
+
+  </div>
+</header>
+<!-- /header -->
+
+
+
+    <div id="menu" class="menu">
+        <div  class="subMenu text-center" ><a id="icontext" href="">
+            <p class="menu_img" ><i class="icon iconfont icon-qiepian1x" style="font-size: 22px;"></i> </p>
+            <div id="one" class="menu_name">创意</div></a>
+        </div>
+        <div  class="subMenu text-center"><a id="icontext2" href="tools.html">
+           <p class="menu_img" ><i class="icon iconfont icon-qiepian21x" style="font-size: 22px;"></i> </p>
+            <div class="menu_name">常用</div></a>
+        </div>
+        <div  class="subMenu text-center"><a id="icontext2" href="efficiency.html">
+           <p class="menu_img" ><i class="icon iconfont icon-qiepian21x" style="font-size: 22px;"></i> </p>
+            <div class="menu_name">效率</div></a>
+        </div>
+        <div class="subMenu text-center"><a id="icontext2" href="plug-in.html">
+            <p class="menu_img" ><i class="icon iconfont icon-qiepian3beifen1x" style="font-size: 22px;"></i> </p>
+            <div class="menu_name">插件</div></a>
+        </div>
+        <div class="subMenu text-center"><a id="icontext2" href="navigation.html">
+           <p class="menu_img" ><i class="icon iconfont icon-qiepian31x" style="font-size: 22px;"></i> </p>
+            <div class="menu_name">导航</div></a>
+        </div>
+
+    </div>
+
+            <!--[if !IE]><!-->
+      <div class="top">
+        <div id="dd" class="wrapper-dropdown-5" tabindex="1" style="padding: 0px !important;">
+          <img data-src="assets/images/nav_icon.png" width="44" height="44">
+          <ul class="dropdown">
+            <div class="index_nav3" style="padding: 0px 0px 0px 9px !important;">
+              <div class="index_nav_icon" style="padding: 0px !important;">
+                <a href="https://www.qijishow.com/">奇迹秀</a></div>
+              <div class="index_nav_icon" style="padding: 0px !important;">
+                <a href="https://www.qijishow.com/Brand/z/index.htm">关于我</a></div>
+              <div class="index_nav_icon" style="padding: 0px !important;">
+                <a href="http://qijishow.com/Brand/Brand31/index.htm">记录线</a></div>
+              <div class="index_nav_icon" style="padding: 0px !important;">
+                <a href="https://www.qijishow.com/Colors/gradient.html">色彩库</a></div>
+              <div class="index_nav_icon" style="padding: 0px !important;">
+                <a href="https://www.qijishow.com/down/index.html">工具箱</a></div>
+              <div class="index_nav_icon" style="padding: 0px !important;">
+                <a href="https://www.qijishow.com/down/message.html">赞助</a></div>
+            </div>
+          </ul>
+        </div>
+        <div class="logo" style="padding: 0px !important;">
+            <img data-src="assets/images/logo.png" width="44" height="44">
+        </div>
+      <div id="pencil" tabindex="1" style="padding: 0px !important;">
+          <a href="https://www.qijishow.com/down/message.html"><img src="assets/images/pencil_icon.png" width="44" height="44"></a>
+      </div>
+       </div>
+        </div>
+    <!--<![endif]-->
+
+        <!--end header-->
+        <div class="moquu_dqlm" id="moqun">
+          <div class="moquu_dhmap" style="width: 100%;">
+            <div class="moquu_listscr" id="listscr">
+              <li class="moquu_listscrnh">
+                <a href="#">创意工具</a></li>
+                <li id="moquu_listscrnhs"  class="moquu_listscrn" >
+                <a href="tools.html">常用工具</a></li>
+                <li class="moquu_listscrn">
+                <a href="efficiency.html">效率工具</a></li>
+                <li id="moquu_listscrnhs"  class="moquu_listscrn" >
+                <a href="plug-in.html">效率插件</a></li>
+              <li id="moquu_listscrnhs" class="moquu_listscrn" >
+                <a href="navigation.html">创意导航</a></li>
+              <li id="moquu_listscrnhs" class="moquu_listscrn">
+                <a href="ai.html" style=" letter-spacing: 2px; ">AI 相关</a></li> 
+              <li id="moquu_listscrnhs" class="moquu_listscrn" >
+                <a href="new.html"  >产品资讯</a></li> 
+              <li id="moquu_listscrnhs" class="moquu_listscrn" >
+                <a href="standard.html">屏幕尺寸</a></li>
+               <li id="moquu_listscrnhs"  class="moquu_listscrn">
+                <a href="ios.html">设计规范</a></li>
+
+            </div>
+       </div>
+    </div>
+   
+
+<div class="side">
+  <ul>
+    <li><a href="#cygj"><div class="sidebox"> <i class="icon iconfont icon-jianpan" id="fonts2" ></i>创意工具</div></a></li>
+    <li><a href="#txcl"><div class="sidebox"> <i class="icon iconfont icon-jianpan" id="fonts2" ></i>图像处理</div></a></li>
+    <li><a href="#mxsj" ><div class="sidebox"><i class="icon iconfont icon-jianpan" id="fonts2" ></i>三维设计</div></a></li>
+    <li><a href="#mxxr" ><div class="sidebox"><i class="icon iconfont icon-jianpan" id="fonts2" ></i>渲染利器</div></a></li>
+    <li><a href="#jmsj" ><div class="sidebox"><i class="icon iconfont icon-jianpan" id="fonts2" ></i>界面设计</div></a></li>
+    <li><a href="#jhsj" ><div class="sidebox"><i class="icon iconfont icon-jianpan" id="fonts2" ></i>交互设计</div></a></li>
+    <li style="border:none;"><a href="javascript:goTop();" ><div class="sidebox"><i class="icon iconfont icon-jianpan" id="fonts2" ></i>返回顶部</div></a></li>
+  </ul>
+</div>
+
+
+
+   <div id="main-wrap" class="main-wrap"> 
+            <div class="main-bted" > </div>  
+ <div class="contents">
+       <div id="content" class="panel">
+            <div class="row" style=" padding: 12px; ">
+
+            <div id="sj-2" class="sm-6 md-4 lg-3">
+                <div class="tool" style=" margin-bottom: 0px; ">
+                  <a class="tool-heading" href="https://www.qijishow.com/adobeall/index.html" target="_blank">
+                    <div id="imgme" class="tool-img" style="background-image:linear-gradient(45deg, #150f11, #130f10) !important;">
+                      <img id="imgmoon" data-src="assets/images/adobeall1.jpg">
+                      <div id="platboos" class="tool-platform" >Adobe 全家桶 - 历史版本合集下载</div></a>
+                    </div>
+                 </div>
+              </div>
+
+            <div id="sj-2" class="sm-6 md-4 lg-3">
+                <div class="tool" style=" margin-bottom: 0px; ">
+                  <a class="tool-heading" href="https://www.qijishow.com/fastmail/index.html" target="_blank">
+                    <div id="imgme" class="tool-img" style="background-image:linear-gradient(45deg, #203b2a, #044328)!important;">
+                      <img id="imgmoon" data-src="assets/images/kuaidi100.jpg">
+                      <div id="platboos" class="tool-platform" >享 5折 寄快递</div></a>
+                    </div>
+                 </div>
+              </div>
+
+            <div id="sj-2" class="sm-6 md-4 lg-3">
+                <div class="tool" style=" margin-bottom: 0px; ">
+                  <a class="tool-heading" href="https://www.qijishow.com/task/index.html" target="_blank">
+                    <div id="imgme" class="tool-img" style="background-image:linear-gradient(45deg, #020311, #020832) !important">
+                      <img id="imgmoon" data-src="assets/images/weinierlai.jpg">
+                      <div id="platboos" class="tool-platform" >奇迹秀 x 中国联通</div></a>
+                    </div>
+                 </div>
+              </div>
+
+            <div id="sj-2" class="sm-6 md-4 lg-3">
+                <div class="tool" style=" margin-bottom: 0px; ">
+                  <a class="tool-heading" href="https://zhishimt.com/" target="_blank">
+                    <div id="imgme" class="tool-img" style="background-image:linear-gradient(45deg, #f6cd18, #e29e06)!important;">
+                      <img id="imgmoon" data-src="assets/images/zhishimt.jpg">
+                      <div id="platboos" class="tool-platform" >知识麦田｜互联网精英自习室</div></a>
+                    </div>
+                 </div>
+              </div>
+
+             </div> 
+          </div> 
+       </div>
+
+      <div class="main-downs"> 
+      <button id="buttons" onclick="toggleContent()"><i id="icon" class="icon iconfont icon-zhedie" style="font-size: 20px !important ;color: #929292;line-height: 0px;"></i></button>
+       </div>
+
+        <a id="创意工具"></a>
+        <div class="panel" style=" padding: 20px;padding-top: 10px;">
+          <div class="panel-title card">
+            <i class="czs-pixels"></i>创意工具 <h1 id="logoqj2">
+               <a class="logo-title" href="https://www.qijishow.com/Brand/hongbao2/index.html" target="_blank" ><i class="icon iconfont icon-hongbao1"></i></a>
+            </h1> </div>
+            <div class="careful">
+            <i class="icon iconfont icon-zhuyi" style="font-size: 17px;float: left;"></i> <a target="_blank" href="https://www.qijishow.com/down/help/index.html" >安装出错，无法安装？</a> </div>
+
+          <div class="panel-body">
+            <div class="row">
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="https://www.qijishow.com/Brand/hongbao2/index.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #f45c36, #ff9722);">
+                      <img data-src="assets/images/DT/1-1-hongbao.png">
+                      <div class="tool-platform">
+                      </div>
+                    </div>
+                    <div class="tool-title">
+                       <i class="icon iconfont icon-a-3xshangxin"style=" font-size: 0.8em; color: #f61c1c; "></i>
+                    支付宝｜大额红包发放中</div></a>
+                  <div class="tool-body">速薅！支付宝最高领88元红包，手慢无</div></div>
+              </div> 
+ 
+<!--              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="https://www.qijishow.com/Brand/zfb/index.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #898ff6, #2991dc);">
+                      <img data-src="assets/images/DT/1-1-afu2.png">
+                      <div class="tool-platform">
+                      </div>
+                    </div>
+                    <div class="tool-title">
+                       <i class="icon iconfont icon-a-3xshangxin"style=" font-size: 0.8em; color: #f61c1c; "></i>
+                    支付宝｜全新AI健康助手</div></a>
+                  <div class="tool-body">注册送36元福利</div></div>
+              </div> -->
+ 
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2026.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC 2026 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="https://www.qijishow.com/adobeds/index.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #1a1b23, #0a090d);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-adobeds.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title"></i> Adobe 大师版合集</div></a>
+                  <div class="tool-body">Adobe全系软件一键安装</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="https://www.qijishow.com/adobeall/index.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #4f3836, #856a78);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-adobeall.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe 全系单版合集</div></a>
+                  <div class="tool-body">涵盖Adobe年度历史版本下载</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Photoshop2026.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #0260a7, #2991dc);">
+                      <img data-src="https://images.qijishow.com/DT/1-Photoshop2024.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Photoshop 2026 正式版</div></a>
+                  <div class="tool-body">AI驱动的新一代创意工具</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2025.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC 2025 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Photoshop.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #0260a7, #2991dc);">
+                      <img data-src="https://images.qijishow.com/DT/1-Photoshop2024.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Photoshop 2025 正式版</div></a>
+                  <div class="tool-body">最新PS版本</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Photoshop Beta.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #6a7a86, #bac6d0);">
+                      <img data-src="https://images.qijishow.com/DT/1-PhotoshopBeta.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Photoshop 2026 Beta 测试版</div></a>
+                  <div class="tool-body">尝鲜体验</div></div>
+              </div>
+ 
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Stable Diffusion.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #1c0786, #9571c2);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Stable Diffusion.png">
+                      <div class="tool-platform">
+                       <!--  <i class="iconfont icon-pingguo"></i> -->
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Ai绘画 Stable Diffusion</div></a>
+                  <div class="tool-body">直接上手生成各种超逼真 AI 妹子！</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ComfyUI.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #b06655, #eb7645);">
+                      <img data-src="https://images.qijishow.com/DT/1-12-ComfyUI.png">
+                      <div class="tool-platform">
+                       <!--  <i class="iconfont icon-pingguo"></i> -->
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Ai绘画 Comfy UI</div></a>
+                  <div class="tool-body">通过工作流程实现更精准的绘画</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe PS 2023.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #282c48;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-PhotoshopCC2022.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Photoshop CC 2023 特别增强版</div></a>
+                  <div class="tool-body">内置上百个插件</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe Illustrator 2022.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #613d02, #d69c43);">
+                      <img data-src="https://images.qijishow.com/DT/1-IllustratorCC2022.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Illustrator CC 2022 增强版</div></a>
+                  <div class="tool-body">内置大量插件</div></div>
+              </div>
+
+          <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe Cloud.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #2067d5, #fe1ff0);">
+                      <img data-src="https://images.qijishow.com/DT/1-CreativeCloud.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe Creative Cloud 创意云</div></a>
+                  <div class="tool-body">Adobe创意云桌面应用程序</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="SketchBook Pro.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #cc7d52, #e28179);">
+                      <img data-src="https://images.qijishow.com/DT/t_SketchBook Pro.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">SketchBook Pro</div></a>
+                  <div class="tool-body">数字绘画软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="CLIP STUDIO.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #383838;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/CLIP STUDIO.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                          <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Clip Studio Paint</div></a>
+                  <div class="tool-body">功能强大的漫画插图设计软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Krita.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #fe48fe94, #31bdca);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Krita.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Krita</div></a>
+                  <div class="tool-body">强大的数字绘画软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="DaVinci Resolve.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #4a5b69;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/t_DaVinci Resolve.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">DaVinci Resolve</div></a>
+                  <div class="tool-body">专业电影级调色软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Fusion Studio.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #a7a318;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-1-FusionStudio.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Fusion Studio</div></a>
+                  <div class="tool-body">史诗级影视后期特效合成软件</div></div>
+              </div>
+       
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Compressor.html" target="_blank">
+                    <div class="tool-img" style="background: linear-gradient(45deg, #131313, #3a3a3a);">
+                      <img data-src="https://images.qijishow.com/DT/t_Compressor2.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Compressor</div></a>
+                  <div class="tool-body">视频压缩编码转码输出工具</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Affinity Canca.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #009688, #8BC34A);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Affinity.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Affinity Canca</div></a>
+                  <div class="tool-body">全新免费图像编辑工具</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="affinity publisher.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #ff6800, #ffd34b);">
+                      <img data-src="https://images.qijishow.com/DT/1-affinity publisher.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">affinity publisher</div></a>
+                  <div class="tool-body">逆天排版神器</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="Affinity Photo.html" target="_blank">
+                    <div class="tool-img" style="    background-image: linear-gradient(45deg, #7d00b3, #cd2aff);">
+                      <img data-src="https://images.qijishow.com/DT/t_affinity photo.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Affinity Photo</div></a>
+                  <div class="tool-body">新型的创意专业修图软件</div></div>
+              </div>
+              
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="Affinity Designer.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #007fff, #00f4bf);">
+                      <img data-src="https://images.qijishow.com/DT/t_affinity.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Affinity Designer</div></a>
+                  <div class="tool-body">新型的创意图形设计图软件</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Artstudio.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #eb8e1a, #d72e15);">
+                      <img data-src="https://images.qijishow.com/DT/t_Artstudio2.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Artstudio Pro</div></a>
+                  <div class="tool-body">艺术绘画大师</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Motion.html" target="_blank">
+                    <div class="tool-img" style="background: linear-gradient(45deg, #131313, #3a3a3a);">
+                      <img data-src="https://images.qijishow.com/DT/Motion2.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Motion</div></a>
+                  <div class="tool-body">视频制作编辑工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Final Cut Pro.html" target="_blank">
+                    <div class="tool-img" style="background: linear-gradient(45deg, #131313, #3a3a3a);">
+                      <img data-src="https://images.qijishow.com/DT/1-Final Cut Pro2.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Final Cut Pro</div></a>
+                  <div class="tool-body">MacOS平台最好的视频剪辑工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="CorelDRAW2025.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #3f8d02;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/t_CorelDRAW 2020.png">
+                      <div class="tool-platform">
+                      <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">CorelDRAW 2025</div></a>
+                  <div class="tool-body">Corel出品强大的矢量设计软件</div></div>
+              </div>
+      
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="Gimp.html" target="_blank">
+                    <div class="tool-img" style="background: #0e2426 ">
+                      <img data-src="https://images.qijishow.com/DT/t_gimp.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                        <i class="czs-linux"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Gimp</div></a>
+                  <div class="tool-body">号称Linux下的PhotoShop</div></div>
+              </div>
+              
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="FireAlpaca.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #ff8443, #a04216);">
+                      <img data-src="https://images.qijishow.com/DT/1-FireAlpaca.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">FireAlpaca</div></a>
+                  <div class="tool-body">简单易用的绘画软件</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Pixelorama.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #37629a, #6aa2e7);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Pixelorama.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Pixelorama</div></a>
+                  <div class="tool-body">像素动画编辑制作工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="inkscape.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #25263a, #4a5b69);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-inkscape.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Inkscape</div></a>
+                  <div class="tool-body">开源矢量图形编辑软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Amadine.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #632d86, #165f69);">
+                      <img data-src="https://images.qijishow.com/DT/t_Amadine.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Amadine</div></a>
+                  <div class="tool-body">矢量图插图设计软件</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Corel VideoStudio Pro2023.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #009693;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/t_Corel VideoStudio Pro9.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">会声会影 2023</div></a>
+                  <div class="tool-body">强大的视频处理编辑软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Cinemagraph Pro.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #34006d, #6200e2);">
+                      <img data-src="https://images.qijishow.com/DT/t_Cinemagraph Pro.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Cinemagraph Pro</div></a>
+                  <div class="tool-body">一款专业的动态图片与视频制作工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Logoist.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #b9651d, #f2cc4f);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Logoist.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Logoist</div></a>
+                  <div class="tool-body">图标设计制作软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Dragonframe.html" target="_blank">
+                    <div class="tool-img" style="background: linear-gradient(45deg, #131313, #3a3a3a);">
+                      <img data-src="https://images.qijishow.com/DT/Dragonframe.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Dragonframe</div></a>
+                  <div class="tool-body">全功能定格动画制作工具</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Fresco.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #688807, #b7d45c);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Frescos.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe Fresco</div></a>
+                  <div class="tool-body">专业数字绘画程序</div></div>
+              </div>
+
+
+<!--               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="zwcad.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #0d6c5a, #63baa6);">
+                      <img data-src="https://images.qijishow.com/DT/1-zwcad.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">中望 CAD</div></a>
+                  <div class="tool-body">国产CAD建筑设计制图软件</div></div>
+              </div>
+ -->
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Nvidia Canvas.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #7fb704, #2f6e04);">
+                      <img data-src="https://images.qijishow.com/DT/1-Nvidia Canvas.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Nvidia Canvas</div></a>
+                  <div class="tool-body">随手涂鸦秒变逼真风景</div></div>
+              </div>           
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="painter.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #000000, #000000);">
+                      <img data-src="https://images.qijishow.com/DT/t_painter.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Corel Painter</div></a>
+                  <div class="tool-body">专业的数字绘画工具</div></div>
+              </div>
+
+<!-- 
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PS2021Mac.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #3282e0, #7e0eda);">
+                      <img data-src="https://images.qijishow.com/DT/1-Neural.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">Mac专用｜Photoshop2021 神经滤镜</div></a>
+                  <div class="tool-body">神经AI滤镜离线安装版</div></div>
+              </div>
+ -->
+
+                 <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Tayasui Sketches.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #1b1b1b, #444444);">
+                      <img data-src="https://images.qijishow.com/DT/1-Sketches-Pro.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Tayasui Sketches</div></a>
+                  <div class="tool-body">超棒的mac绘图工具</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Moho Pro.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #f68a1f, #b6202e);">
+                      <img data-src="https://images.qijishow.com/DT/t_Moho Pro.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Moho Pro</div></a>
+                  <div class="tool-body">二维卡通动画制作软件</div></div>
+              </div>
+
+
+<!--               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="CorelDRAW2020.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #2e5000, #66b300);">
+                      <img data-src="https://images.qijishow.com/DT/t_CorelDRAW 2020.png">
+                      <div class="tool-platform">
+                      <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">CorelDRAW 2020</div></a>
+                  <div class="tool-body">Corel出品强大的矢量设计软件</div></div>
+              </div>
+               -->
+<!--        
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Corel VideoStudio Pro2020.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #009693, #155a67);">
+                      <img data-src="https://images.qijishow.com/DT/t_Corel VideoStudio Pro9.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">会声会影 2020</div></a>
+                  <div class="tool-body">强大的视频处理编辑软件</div></div>
+              </div>
+
+ -->
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="edius.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #0d6c35;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-edius.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">EDIUS Pro 9</div></a>
+                  <div class="tool-body">专业非线性视频编辑剪辑软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="paintstorm studio.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #efac44, #f1d340);">
+                      <img data-src="https://images.qijishow.com/DT/t_Paintstorm Studio.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                        <!--  <i class="iconfont icon-win"></i> -->
+                      </div>
+                    </div>
+                    <div class="tool-title">paintstorm studio</div></a>
+                  <div class="tool-body">专业的数字绘画软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="sai.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #ffffff;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/t_sai.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win" style="color: #585858;"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">sai 绘图软件</div></a>
+                  <div class="tool-body">笔刷图案丰富逼真</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Corel PhotoMirage.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #000000, #000000);">
+                      <img data-src="https://images.qijishow.com/DT/t_PhotoMirage.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PhotoMirage</div></a>
+                  <div class="tool-body">动态图片制作软件</div></div>
+              </div>
+
+ 
+<!-- 
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="CorelDRAW2019.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #2e5000, #66b300);">
+                      <img data-src="https://images.qijishow.com/DT/t_CorelDRAW X8.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">CorelDRAW 2019</div></a>
+                  <div class="tool-body">Corel出品强大的矢量设计软件</div></div>
+              </div>
+ -->
+<!-- 
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Corel VideoStudio Pro2019.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #009693, #155a67);">
+                      <img data-src="https://images.qijishow.com/DT/t_Corel VideoStudio Pro9.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">会声会影 2019</div></a>
+                  <div class="tool-body">强大的视频处理编辑软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Corel VideoStudio Pro2018.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #b91e1e, #e44b4b);">
+                      <img data-src="https://images.qijishow.com/DT/t_Corel VideoStudio Pro.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">会声会影 2018</div></a>
+                  <div class="tool-body">强大的视频处理编辑软件</div></div>
+              </div>
+ -->
+<!--               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Corel VideoStudio Pro.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #b3181f, #ff4f55);">
+                      <img data-src="https://images.qijishow.com/DT/t_Corel VideoStudio Pro.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">会声会影 X10</div></a>
+                  <div class="tool-body">强大的视频处理编辑软件</div></div>
+              </div>
+ -->
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2024.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC 2024 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2023.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC 2023 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2022.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC 2022 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2022 M1.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #121447, #971a45);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2021m1.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe 2022 M1/M2专用 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2021 M1.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #121447, #971a45);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2021m1.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe 2021 M1/M2专用 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2021.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC 2021 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2020.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC 2020 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+   
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2019.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC 2019 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+        
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2018.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC2018 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2017.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC2017 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC2015.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe CC2015 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+
+              <div class="sm-6 md-4 lg-3"><a name="txcl" />  
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe CC.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d0003, #770001);">
+                      <img data-src="https://images.qijishow.com/DT/t_Adobe CC2017.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">【低配下载】Adobe CC 整套</div></a>
+                  <div class="tool-body">包含PS、AI、AE、PR等软件</div></div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+   </div>
+
+
+   <div class="main-wrap" id="main-wraps">
+
+        <a id="图像处理"></a>
+        <div class="panel">
+          <div class="panel-title card">
+            <i class="czs-d-space"></i>图像处理</div>
+             <div class="careful">
+            <i class="icon iconfont icon-zhuyi" style="font-size: 17px;float: left;"></i> <a target="_blank" href="https://www.qijishow.com/down/help/index.html" >安装出错，无法安装？</a> </div>
+
+          <div class="panel-body">
+            <div class="row">
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz Video AI.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #281f64, #5b50cb);">
+                      <img data-src="https://images.qijishow.com/DT/VideoAI.png">
+                      <div class="tool-platform">
+                      <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz Video AI</div></a>
+                  <div class="tool-body">AI视频无损放大软件</div></div>
+              </div> 
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz Gigapixel AI .html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #9e062d, #ff2257);">
+                      <img data-src="https://images.qijishow.com/DT/TopazGigapixel.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz Gigapixel AI</div></a>
+                  <div class="tool-body">AI智能图片无损放大</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="DxO_ViewPoint.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #6e8fa8, #c8ddee)">
+                      <img data-src="https://images.qijishow.com/DT/t_ViewPoint.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">DxO ViewPoint</div></a>
+                  <div class="tool-body">图像变形矫正工具</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="DxO FilmPack.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #de591d, #ff8c58)">
+                      <img data-src="https://images.qijishow.com/DT/t_FilmPack.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">DxO FilmPack</div></a>
+                  <div class="tool-body">胶片模拟滤镜</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="DxO PureRAW RAW.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #179184, #18dad0)">
+                      <img data-src="https://images.qijishow.com/DT/t_PureRAW.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">DxO PureRAW RAW</div></a>
+                  <div class="tool-body">降噪矫正软件</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Pixelmator.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #dc9532, #d78015);">
+                      <img data-src="https://images.qijishow.com/DT/Pixelmator.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Pixelmator</div></a>
+                  <div class="tool-body">创新的图像图像处理软件</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Capture One.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #6435e0;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-1-CaptureOne.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Capture One PRO</div></a>
+                  <div class="tool-body">专业级raw图像处理软件</div></div>
+              </div>
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PhotoMill X.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3F51B5, #9C27B0);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PhotoMillX.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PhotoMill X</div></a>
+                  <div class="tool-body">图片批量处理</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ON1 Photo RAW.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #8f4396, #296fe4);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-ON1PhotoRAW.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ON1 Photo RAW</div></a>
+                  <div class="tool-body">专业级后期摄影图像处理软件</div></div>
+              </div>
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ACDSee.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #310c0d, #5a1315);">
+                      <img data-src="https://images.qijishow.com/DT/ACDSee.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ACDSee Photo Studio</div></a>
+                  <div class="tool-body">看图和数字图像处理软件</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PhotosRevive.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #9402fe, #af69a1);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PhotosRevive.png">
+                      <div class="tool-platform">
+                      <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PhotosRevive</div></a>
+                  <div class="tool-body">老旧照片自动着色工具</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Aiarty Video Enhancer.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #2b35a4, #7048e4)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-AiartyVideoEnhancer.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Aiarty Video Enhancer</div></a>
+                  <div class="tool-body">AI视频增强编辑器</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Pixelmator Pro.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #eb8e1a, #d72e15);">
+                      <img data-src="https://images.qijishow.com/DT/Pixelmator Pro.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Pixelmator Pro</div></a>
+                  <div class="tool-body">创新的图像编辑应用程序</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Luminar Neo.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #5d5ccb;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-Luminar Neo.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Luminar Neo</div></a>
+                  <div class="tool-body">超强人工智能图像编辑器</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PhotoDirector.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #eb8e1a, #d72e15)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PhotoDirector.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PhotoDirector Ultra</div></a>
+                  <div class="tool-body">相片大师编辑</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="CameraBag.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #4cbd04, #00c1c7);">
+                      <img data-src="https://images.qijishow.com/DT/t_CameraBag.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">CameraBag Pro</div></a>
+                  <div class="tool-body">快速编辑照片及视频滤镜效果</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="DxO PhotoLab RAW.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #166997, #58bff7)">
+                      <img data-src="https://images.qijishow.com/DT/t_PhotoLab.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">DxO PhotoLab RAW</div></a>
+                  <div class="tool-body">RAW 后期处理软件</div></div>
+              </div> 
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="HitPaw Watermark.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #705aff;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-DmmICI2.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">HitPaw Watermark Remover</div></a>
+                  <div class="tool-body">视频图片水印清除</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz Photo AI.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #303681, #6471ff);">
+                      <img data-src="https://images.qijishow.com/DT/1TopazPhotoAI.png">
+                      <div class="tool-platform">
+                      <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz Photo AI</div></a>
+                  <div class="tool-body">AI智能图像自动降噪锐化增强</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="RadiantPhoto.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #eca449, #d7bc15);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-RadiantPhoto.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Radiant Photo</div></a>
+                  <div class="tool-body">图像AI增强修饰</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PMLite.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #2e739c, #50bcfe);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PMLite.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PMLite</div></a>
+                  <div class="tool-body">图像校正漂白工具</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Final2x.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #009688, #24d7c6);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Final2x.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Final2x</div></a>
+                  <div class="tool-body">图像AI放大增强</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ON1 Resize AI.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #5e27a7, #ba43bb)">
+                      <img data-src="https://images.qijishow.com/DT/t_ON1 Resize.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ON1 Resize AI</div></a>
+                  <div class="tool-body">图片无损缩放工具</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="nkgh.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #ffe101, #8f8013);">
+                      <img data-src="https://images.qijishow.com/DT/1-nkgh.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">尼康工坊</div></a>
+                  <div class="tool-body">图像编辑处理</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Darktable.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #d6721c, #b43bb0);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Darktable.png">
+                      <div class="tool-platform">
+                      <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Darktable</div></a>
+                  <div class="tool-body">RAW图像编辑处理</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Nik Collection.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #ca9922, #fad34e)">
+                      <img data-src="https://images.qijishow.com/DT/t_Nik Collection.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">DxO Nik Collection</div></a>
+                  <div class="tool-body">PS滤镜套装下载</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="Perfectly Clear.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(50deg, #6bcc8a, #ddc72f);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PerfectlyClear.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo" ></i> 
+                        <i class="iconfont icon-win" ></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Perfectly Clear WorkBench</div></a>
+                  <div class="tool-body">AI智能清晰修图软件</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="IrixHDR.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #626262, #b6c7cd);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-IrixHDRPro.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Irix HDR Pro</div></a>
+                  <div class="tool-body">HDR图像编辑处理</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Aiarty Image Enhancer.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #281f64, #5b50cb)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-AiartyImageEnhancer.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Aiarty Image Enhancer</div></a>
+                  <div class="tool-body">图像AI增强修复</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Photomator.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #ba2f67, #ffa200);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Photomator.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Photomator</div></a>
+                  <div class="tool-body">创新的图像编辑应用程序</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Aperty.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #705aff;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Aperty.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Aperty</div></a>
+                  <div class="tool-body">AI人像后期修图</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Gilisoft SnapID.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3F51B5, #00BCD4)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Gilisoft SnapID.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Gilisoft SnapID</div></a>
+                  <div class="tool-body">全能证件照大师</div></div>
+              </div> 
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Background Remover.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #0b5ea8, #9993ff);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Background Remover.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Ashampoo Background Removerv</div></a>
+                  <div class="tool-body">AI照片背景去除工具</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="InPixio Photo Eraser.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3282e0, #0196a2);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Eraser.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">InPixio Photo Eraser</div></a>
+                  <div class="tool-body">图像处理擦除工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="InPixio Photo Editor.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #58890d, #bdd445);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Editor.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">InPixio Photo Editor</div></a>
+                  <div class="tool-body">照片滤镜编辑处理工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="InPixio Photo Cutter.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3282e0, #7e0eda);">
+                      <img data-src="https://images.qijishow.com/DT/1-Photo Cutter.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">inPixio Photo Cutter</div></a>
+                  <div class="tool-body">一键抠图合成工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ON1 Effects.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3b48b8, #4fa4e2)">
+                      <img data-src="https://images.qijishow.com/DT/t_ON1 Effects.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ON1 Effects</div></a>
+                  <div class="tool-body">照片滤镜/LUT/纹理处理工具</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="KlearMax.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #cd2e9d, #ddad54);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-KlearMax.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">KlearMax</div></a>
+                  <div class="tool-body">AI图片变清晰增强、提高分辨率工具</div></div>
+              </div>
+   
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="InPixio Photo Maximizer.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #ffcc00, #ae8c0d);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-InPixio Photo Maximizer.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">InPixio Photo Maximizer</div></a>
+                  <div class="tool-body">图片高清无损放大软件</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Pano2VR.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #789250, #eee046)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Pano2VR.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Pano2VR Pro</div></a>
+                  <div class="tool-body">全景VR漫游视频制作软件</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Upscayl.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #166997, #58bff7)">
+                      <img data-src="https://images.qijishow.com/DT/1-Upscayl.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Upscayl</div></a>
+                  <div class="tool-body">AI图像放大增强工具</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="KleanOut.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #101865, #14339b);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-KleanOut.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">KleanOut</div></a>
+                  <div class="tool-body">AI水印移除、物体移除工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="MovaviPhotoEditor.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #eb8e1a, #e5c907)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-MovaviPhotoEditor.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Movavi Photo Editor</div></a>
+                  <div class="tool-body">照片编辑处理</div></div>
+              </div> 
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="InPixio Photo Focus.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #f53e7b, #a91747);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-InPixio Photo Focus.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">InPixio Photo Focus</div></a>
+                  <div class="tool-body">模糊照片清晰处理软件</div></div>
+              </div> 
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PhotoWorks.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #f68220, #bc4145);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PhotoWorks.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PhotoWorks 照片大师</div></a>
+                  <div class="tool-body">智能图像编辑软件</div></div>
+              </div> 
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Inpaint.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #1273aa;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/t_Inpaint.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Inpaint</div></a>
+                  <div class="tool-body">快速去水印软件</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="LRTimelapse.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #a68651, #c3a98a);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-LRTimelapse.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">LRTimelapse Pro</div></a>
+                  <div class="tool-body">专业的延时摄影编辑和创建工具</div></div>
+              </div> 
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PhotoZoom Pro.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #e4e4e4;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/t_PhotoZoom Pro6.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo" style="color: #585858;" ></i>
+                        <i class="iconfont icon-win" style="color: #585858;" ></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PhotoZoom Pro</div></a>
+                  <div class="tool-body">图片无损放大工具</div></div>
+              </div>  
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ON1 NoNoise AI.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #119bc7, #1fbf85)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-on1-nonoise-ai-2021.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ON1 NoNoise AI</div></a>
+                  <div class="tool-body">摄影照片降噪工具</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Prima.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #f7bc4b, #63bf52);">
+                      <img data-src="https://images.qijishow.com/DT/1-Prima.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Prima Cartoonizer</div></a>
+                  <div class="tool-body">真人图片转卡通效果</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Perfectly Clear Video.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #05c7a7, #0b9d85)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-ClearVideo.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Perfectly Clear Video</div></a>
+                  <div class="tool-body">AI视频清晰化处理</div></div>
+              </div> 
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Wipit.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #4267fd, #41e6a1);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Wipit.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Wipit</div></a>
+                  <div class="tool-body">视频与图片AI去水印</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="HitPaw Video Enhancer.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #705aff;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/HitPawVideo.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">HitPaw Video Enhancer</div></a>
+                  <div class="tool-body">影片画质清晰放大工具</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="CameraBag photo.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #4b469e, #00c1c7);">
+                      <img data-src="https://images.qijishow.com/DT/1-photo.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">CameraBag Photo</div></a>
+                  <div class="tool-body">照片滤镜编辑软件</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="HitPaw Photo AI.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #690af4;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-HitPawPhotoAI.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                       <!--  <i class="iconfont icon-win"></i> -->
+                      </div>
+                    </div>
+                    <div class="tool-title">HitPaw Photo AI</div></a>
+                  <div class="tool-body"> 图像AI编辑处理</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="HitPaw Object Remover.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #690af4;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-HitPawObjectRemover.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">HitPaw Object Remover</div></a>
+                  <div class="tool-body">AI视频物体抠除工具</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="HitPaw Photo Object Remover.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #705aff;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-HitPawPhotoObjectRemover.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">HitPaw Photo Object Remover</div></a>
+                  <div class="tool-body">图片AI去除背景对象</div></div>
+              </div>
+   
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="HitPaw Photo.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #4c18c2;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/HitPaw.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">HitPaw Photo Enhancer</div></a>
+                  <div class="tool-body">人工智能图像清晰放大工具</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PTGuiPro.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3b6bb5, #6b9cf2);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PTGuiPro.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">PTGui Pro</div></a>
+                  <div class="tool-body">VR全景制作工具</div></div>
+              </div>
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Photoshop Elements.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #303953, #3d4165);">
+                      <img data-src="https://images.qijishow.com/DT/WXApp.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">Photoshop Elements</div></a>
+                  <div class="tool-body">Adobe 新推出的图片处理软件</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PhotoDiva.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #5c2e91, #f95372);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PhotoDiva.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PhotoDiva</div></a>
+                  <div class="tool-body">人像美容修饰化妆塑形</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Movavi.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #ff7f8a, #b83f4a);">
+                      <img data-src="https://images.qijishow.com/DT/1-Movavi.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">Movavi Picverse</div></a>
+                  <div class="tool-body">图像AI编辑处理</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ON1 Photo Keyword AI.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #cb7709, #ffcc00);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-photo-keyword-ai.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ON1 Photo Keyword AI</div></a>
+                  <div class="tool-body">图片AI搜索管理</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ON1 Sky Swap AI.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #8f4396, #296fe4);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-ON1SkySwap.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ON1 Sky Swap AI</div></a>
+                  <div class="tool-body"> 图片AI天空替换处理软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ON1 Portrait AI.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #99106d, #f95555)">
+                      <img data-src="https://images.qijishow.com/DT/t_ON1 Portrait.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ON1 Portrait AI</div></a>
+                  <div class="tool-body">智能人像处理工具</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="ON1 HDR.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #ff7120, #fbbf41)">
+                      <img data-src="https://images.qijishow.com/DT/t_ON1 HDR.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">ON1 HDR</div></a>
+                  <div class="tool-body">HDR照片编辑工具</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="HitPaw Compressor.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #783bdc;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-HitPawCompressor.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">HitPaw Compressor</div></a>
+                  <div class="tool-body">无损视频/图片压缩工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="luminar.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #5d5ccb;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-luminar 2018.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                          <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">luminar 4</div></a>
+                  <div class="tool-body">史上最完整的HDR处理工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Luminar AI.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #5d5ccb;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/t_Luminar AI.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                         <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Luminar AI</div></a>
+                  <div class="tool-body">AI智能图像处理软件</div></div>
+              </div>
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Premiere Elements.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #462649, #180223);">
+                      <img data-src="https://images.qijishow.com/DT/t_Premiere.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i> 
+                      </div>
+                    </div>
+                    <div class="tool-title">Premiere Elements</div></a>
+                  <div class="tool-body">Adobe 新推出的视频编辑软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Polarr.html" target="_blank">
+                    <div class="tool-img" id="tool-color" style="background: #333333;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/Polarr.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Polarr 泼辣修图</div></a>
+                  <div class="tool-body">小巧的修图工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Aurora_HDR.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #000000, #383838);">
+                      <img data-src="https://images.qijishow.com/DT/1-Aurora HDR.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                          <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Aurora HDR</div></a>
+                  <div class="tool-body">史上最完整的HDR处理工具</div></div>
+              </div>
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz Studio.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #c51043, #ffca29);">
+                      <img data-src="https://images.qijishow.com/DT/1-Topaz Studio.png">
+                      <div class="tool-platform">
+                      <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz Studio</div></a>
+                  <div class="tool-body">创意照片编辑工具</div></div>
+              </div> 
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Enhance AI.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #337de2, #013886);">
+                      <img data-src="https://images.qijishow.com/DT/1-Enhance AI.png">
+                      <div class="tool-platform">
+                      <i class="iconfont icon-pingguo"></i> 
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz Video Enhance AI</div></a>
+                  <div class="tool-body">人工智能视频无损放大软件</div></div>
+              </div> 
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="TopazMask AI.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #c586ef, #661c9e);">
+                      <img data-src="https://images.qijishow.com/DT/TopazMaskAI.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz Mask AI</div></a>
+                  <div class="tool-body">最好的AI智能蒙版扣图软件</div></div>
+              </div> 
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz Sharpen AI.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #7ebfff, #294598);">
+                      <img data-src="https://images.qijishow.com/DT/1-Sharpen.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz Sharpen AI</div></a>
+                  <div class="tool-body">AI智能图片清晰锐化</div></div>
+              </div> 
+
+            <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz DeNoise AI.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #89cb4e, #10773a);">
+                      <img data-src="https://images.qijishow.com/DT/1-DeNoise.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz DeNoise AI</div></a>
+                  <div class="tool-body">AI智能图片降噪工具</div></div>
+              </div>              
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz JPEG to RAW AI.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #d25d81, #6d0e2b);">
+                      <img data-src="https://images.qijishow.com/DT/1-JPEG to RAW.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz JPEG to RAW AI</div></a>
+                  <div class="tool-body">AI智能JPEG转RAW恢复颜色细节</div></div>
+              </div>
+          
+
+       <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz Adjust AI.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #fac874, #b77912);">
+                      <img data-src="https://images.qijishow.com/DT/1-Adjust.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz Adjust AI</div></a>
+                  <div class="tool-body">AI智能HDR滤镜处理工具</div></div>
+              </div> 
+
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Topaz ReMask.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #391696, #2c1273);">
+                      <img data-src="https://images.qijishow.com/DT/Topaz ReMask.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Topaz ReMask</div></a>
+                  <div class="tool-body">快速抠图工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="TouchRetouch.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #7dfcbb, #089785);">
+                      <img data-src="https://images.qijishow.com/DT/TouchRetouch.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">TouchRetouch</div></a>
+                  <div class="tool-body">一键擦图神器</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3"> <a name="mxsj" />   
+                <div class="tool">
+                  <a class="tool-heading" href="Photolemur.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #096335, #33c45e);">
+                      <img data-src="https://images.qijishow.com/DT/t_Photolemur.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Photolemur 3</div></a>
+                  <div class="tool-body">强大的AI人工智能修图软件</div></div>
+              </div>
+ 
+         </div>
+     </div>
+ </div>
+   </div>
+
+
+   <div class="main-wrap" id="main-wraps">
+
+
+        <a id="模型设计"></a>
+        <div class="panel">
+          <div class="panel-title card">
+            <i class="czs-d-space"></i>模型设计</div>
+             <div class="careful">
+            <i class="icon iconfont icon-zhuyi" style="font-size: 17px;float: left;"></i> <a target="_blank" href="https://www.qijishow.com/down/help/index.html" >安装出错，无法安装？</a> </div>
+
+          <div class="panel-body">
+            <div class="row">
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="Pixologic ZBrush.html" target="_blank">
+                    <div class="tool-img"  id="tool-color" style="background: #4a4a4a;background-image: url(../down/assets/icon/hexie.png) !important;background-repeat: no-repeat !important;background-size: 60px;">
+                      <img data-src="https://images.qijishow.com/DT/1-1-ZBrush.png">
+                      <div class="tool-platform">
+                         <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Pixologic ZBrush</div></a>
+                  <div class="tool-body">3D数字雕刻和绘画软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="3Dmax.html" target="_blank">
+                    <div class="tool-img" style="background: #156a6a ">
+                      <img data-src="https://images.qijishow.com/DT/t_3dmax.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">3Dmax</div></a>
+                  <div class="tool-body">三维动画渲染和制作软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Substance3DPainter.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #73b12d, #3d6305);">
+                      <img data-src="https://images.qijishow.com/DT/1-Substance 3D Painter.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Substance 3D Painter</div></a>
+                  <div class="tool-body">Adobe 次世代游戏贴图绘制软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="sketchup Pro.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #01609f, #87009e);">
+                      <img data-src="https://images.qijishow.com/DT/t_sketchup2.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">sketchup Pro</div></a>
+                  <div class="tool-body">极受欢迎的3D设计软件</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Live Home 3D.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #bd1452, #58012b);">
+                      <img data-src="https://images.qijishow.com/DT/1-Live Home 3D.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Live Home 3D Pro</div></a>
+                  <div class="tool-body">房屋家居3D设计软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="blender.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #003973, #3389c7)">
+                      <img data-src="https://images.qijishow.com/DT/t_blender.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Blender</div></a>
+                  <div class="tool-body">开源的全能三维动画制作软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Marvelous Designer.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #764927, #e3b65d);">
+                      <img data-src="https://images.qijishow.com/DT/t_Marvelous Designer.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Marvelous Designer</div></a>
+                  <div class="tool-body">非常专业的三维布料服装设计软件</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Rhino.html" target="_blank">
+                    <div class="tool-img" style="background: #6d4242;">
+                      <img data-src="https://images.qijishow.com/DT/t_rhino1.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Rhino</div></a>
+                  <div class="tool-body">专业3D造型软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Cinema 4D.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #0c0c0c, #4a4a4a);">
+                      <img data-src="https://images.qijishow.com/DT/t_cinema4d.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Cinema 4D </div></a>
+                  <div class="tool-body">一款功能强大的专业3D建模工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="AutoCAD.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #e2535f, #9a2d33);">
+                      <img data-src="https://images.qijishow.com/DT/1-AutoCAD.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">AutoCAD</div></a>
+                  <div class="tool-body">视觉后期特效制作软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="FreeCAD.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #22242c, #606375);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-FreeCAD.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">FreeCAD</div></a>
+                  <div class="tool-body">CAD绘图设计</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="PixelOver.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3c465b, #7484a8);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-PixelOver.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">PixelOver</div></a>
+                  <div class="tool-body">像素动画编辑制作</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Substance3DStager.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #73b12d, #3d6305);">
+                      <img data-src="https://images.qijishow.com/DT/1-Substance 3D Stager.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Substance 3D Stager</div></a>
+                  <div class="tool-body">Adobe 三维场景搭建软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Substance3DSampler.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #73b12d, #3d6305);">
+                      <img data-src="https://images.qijishow.com/DT/1-Substance 3D Sampler.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Substance 3D Sampler</div></a>
+                  <div class="tool-body">Adobe 真实材质贴图制作软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="Maya.html" target="_blank">
+                    <div class="tool-img" style="background: #006a6a ">
+                      <img data-src="https://images.qijishow.com/DT/t_maya.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Maya</div></a>
+                  <div class="tool-body">世界顶级的三维动画软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="zwcad.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #086953, #17b99a);">
+                      <img data-src="https://images.qijishow.com/DT/1-zwcad.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">中望CAD</div></a>
+                  <div class="tool-body">国产CAD建筑设计制图软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="3DFZephyr.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #f79c9d, #ee494c);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Zephyr.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">3DF Zephyr</div></a>
+                  <div class="tool-body">图片转3D模型</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Sweet Home 3D.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #ae5c51, #dcb06a);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Sweet Home 3D.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Sweet Home 3D</div></a>
+                  <div class="tool-body">3D室内装潢设计</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Substance3DModeler.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #73b12d, #3d6305);">
+                      <img data-src="https://images.qijishow.com/DT/1-Substance3DModeler2.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Substance 3D Modeler</div></a>
+                  <div class="tool-body">Adobe 全新3D建模工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="GstarCAD Pro.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #1662ff, #55affa);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-GstarCAD.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">浩辰CAD</div></a>
+                  <div class="tool-body">国产CAD制图设计专业版</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Flame.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #50b6da, #217695);">
+                      <img data-src="https://images.qijishow.com/DT/1-12-Flame.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Flame</div></a>
+                  <div class="tool-body">Autodesk公司出品的CAD软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Substance3DDesigner.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #73b12d, #3d6305);">
+                      <img data-src="https://images.qijishow.com/DT/1-Substance 3D Designer.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Substance 3D Designer</div></a>
+                  <div class="tool-body">Adobe 三维贴图材质制作软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Planner 5D.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #398e49, #08d767);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Planner5D.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                      <!--   <i class="iconfont icon-win"></i> -->
+                      </div>
+                    </div>
+                    <div class="tool-title">Planner 5D</div></a>
+                  <div class="tool-body">室内家居设计工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Project Neo.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #5993ca, #2060ba);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-ProjectNeo.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe Project Neo 汉化插件</div></a>
+                  <div class="tool-body">用3D魔法给2D设计加速</div></div>
+              </div> 
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="tianzhen.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #7b8fbb, #676b90);">
+                      <img data-src="https://images.qijishow.com/DT/1-tianzhen.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">天正T20 5件套</div></a>
+                  <div class="tool-body">功能强大的建筑图纸设计软件</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="CLO.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #6e5edb, #87a7f0);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-CLO.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                       <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">CLO Standalone OnlineAuth</div></a>
+                  <div class="tool-body">三维服装设计演示工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Auto Mudbox.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #136328, #058b4a);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Mudbox.png.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Autodesk Mudbox</div></a>
+                  <div class="tool-body">一款数字绘画和雕刻软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="CorelCAD.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #25090b, #27080b);">
+                      <img data-src="https://images.qijishow.com/DT/t_CorelCAD.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">CorelCAD</div></a>
+                  <div class="tool-body">专业的2D制图和3D设计工具</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Capture.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #792886, #cc302f)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Capture.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Capture</div></a>
+                  <div class="tool-body">舞台3D灯光设计软件</div></div>
+              </div> 
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Spline.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #0854bf, #17a3e8);">
+                      <img data-src="https://images.qijishow.com/DT/1-Spline.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Spline</div></a>
+                  <div class="tool-body">可交互3D Web体验设计工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Design Camera.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #003973, #3389c7);">
+                      <img data-src="https://images.qijishow.com/DT/1-Design Camera.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Design Camera</div></a>
+                  <div class="tool-body">动态UI样机设计神器</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="MagicaCSG.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6235bb, #ad8b69);">
+                      <img data-src="https://images.qijishow.com/DT/t_MagicaVoxel.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">MagicaCSG</div></a>
+                  <div class="tool-body">简单的三维建模软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="MagicaVoxel.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6235bb, #ad8b69);">
+                      <img data-src="https://images.qijishow.com/DT/t_MagicaVoxel.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">MagicaVoxel</div></a>
+                  <div class="tool-body">像搭积木一样做3D场景</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3"><a name="mxxr" />  
+                <div class="tool">
+                  <a class="tool-heading" href="mokupframes.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #6d48e4, #6d48e4);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-mokupframes.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Mokup Frames</div></a>
+                  <div class="tool-body">一键生成样机效果图</div></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+   </div>
+
+
+   <div class="main-wrap" id="main-wraps">
+
+        <a id="模型渲染器"></a>
+        <div class="panel">
+          <div class="panel-title card">
+            <i class="czs-d-space"></i>模型渲染器</div>
+             <div class="careful">
+            <i class="icon iconfont icon-zhuyi" style="font-size: 17px;float: left;"></i> <a target="_blank" href="https://www.qijishow.com/down/help/index.html" >安装出错，无法安装？</a> </div>
+
+          <div class="panel-body">
+            <div class="row">
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="keyshot.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #0854bf, #17a3e8);">
+                      <img data-src="https://images.qijishow.com/DT/1-KeyShot Pro.png">
+                      <div class="tool-platform">
+                       <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">KeyShot Pro </div></a>
+                  <div class="tool-body">强大的3D动画渲染制作工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Octance Renderer.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #191212, #2f1840);">
+                      <img data-src="https://images.qijishow.com/DT/t_Octance Renderer.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Octane Render</div></a>
+                  <div class="tool-body">第一个GPU加速的最快物理渲染器</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="RedShift.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #db456d, #883197);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-RedShift.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">RedShift</div></a>
+                  <div class="tool-body">业界知名的GPU渲染器</div></div>
+              </div>
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="C4DtoA.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #9ed9de, #197c83);">
+                      <img data-src="https://images.qijishow.com/DT/t_Arnold.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Arnold C4DtoA</div></a>
+                  <div class="tool-body">C4D阿诺德渲染器</div></div>
+              </div>
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Marmoset Toolbag.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3d3e77, #4e9ecb);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-MarmosetToolbag.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Marmoset Toolbag</div></a>
+                  <div class="tool-body">八猴渲染器</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="NextLimit Maxwell.html" target="_blank">
+                    <div class="tool-img" style="background:linear-gradient(45deg, #0c0c0c, #4a4a4a);">
+                      <img data-src="https://images.qijishow.com/DT/t_Maxwell.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">NextLimit Maxwell 5.1</div></a>
+                  <div class="tool-body">GPU光线追踪渲染器</div></div>
+              </div>
+
+               <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="lumion.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #1c3c48, #498095);">
+                      <img data-src="https://images.qijishow.com/DT/1-lumio.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Lumion Pro</div></a>
+                  <div class="tool-body">建筑景观3D可视化渲染软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Corona.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #cd7450, #e85454);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-Corona.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Corona Renderer</div></a>
+                  <div class="tool-body">C4D实时交互渲染器</div></div>
+              </div>
+            
+              <div class="sm-6 md-4 lg-3"><a name="jmsj" />
+                <div class="tool">
+                  <a class="tool-heading" href="Vray.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #6083ab, #394f75);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-V-Ray.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">V-Ray 渲染器</div></a>
+                  <div class="tool-body">功能丰富的产品渲染工具</div></div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+   </div>
+
+   <div class="main-wrap" id="main-wraps">
+
+        <a id="界面设计"></a>
+        <div class="panel">
+          <div class="panel-title card">
+            <i class="czs-tab-select"></i>界面设计</div>
+            <div class="careful">
+            <i class="icon iconfont icon-zhuyi" style="font-size: 17px;float: left;"></i> <a target="_blank" href="https://www.qijishow.com/down/help/index.html" >安装出错，无法安装？</a> </div>
+
+          <div class="panel-body">
+            <div class="row">
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Sketch_new.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #ec7200, #fecd1c);">
+                      <img data-src="https://images.qijishow.com/DT/t_sketch2.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Sketch</div></a>
+                  <div class="tool-body">强大的UI界面和原型图设计软件</div></div>
+              </div>
+ 
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="Figma.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #a35dfe, #572fff);">
+                      <img data-src="https://images.qijishow.com/DT/1-1-FigmaEX.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Figma 汉化版</div></a>
+                  <div class="tool-body">强大的UI原型设计工具</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Axure10.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #4776fa, #1d347e);">
+                      <img data-src="https://images.qijishow.com/DT/t_Axure10.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Axure RP 11</div></a>
+                  <div class="tool-body">一个专业的快速原型设计工具</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Adobe Xd cc.html" target="_blank">
+                    <div class="tool-img" style="background: linear-gradient(45deg, #590f44, #7a125c); ">
+                      <img data-src="https://images.qijishow.com/DT/t_experiencedesign.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Adobe XD</div></a>
+                  <div class="tool-body">adobe出品UI和原型图设计软件</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Sketch Fashion.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #7b0887, #d521e8);">
+                      <img data-src="https://images.qijishow.com/DT/1-Sketch Fashion2.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Sketch Fashion</div></a>
+                  <div class="tool-body">优秀的服装设计工具</div></div>
+              </div>
+
+<!-- 
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="https://www.mockplus.cn/dt/?hmsr=qd-qijixiuDT" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #d49a26, #f1c56e);">
+                      <img data-src="https://images.qijishow.com/DT/t_mukedr.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">摹客dt</div></a>
+                  <div class="tool-body">简单易用的国产在线设计工具</div></div>
+              </div>
+ -->
+
+          <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Axure9.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #009ede, #c514f2);">
+                      <img data-src="https://images.qijishow.com/DT/1-axure9.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Axure 9</div></a>
+                  <div class="tool-body">一个专业的快速原型设计工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="InVision Studio.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #1d1919, #0b0c0e);">
+                      <img data-src="https://images.qijishow.com/DT/t_InVision Studio.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">InVision Studio</div></a>
+                  <div class="tool-body">最赞的界面设计工具</div></div>
+              </div>
+<!-- 
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="https://www.invisionapp.com/" target="_blank">
+                    <div class="tool-img" style="background: #ff3366 ">
+                      <img data-src="https://images.qijishow.com/DT/t_invisionapp.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-win"></i>
+                        <i class="czs-linux"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">invision</div></a>
+                  <div class="tool-body">世界级高效原型、写作、工作流软件</div></div>
+              </div>
+ -->
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Framer X.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3e7cd4, #17a3e8)">
+                      <img data-src="https://images.qijishow.com/DT/1-Framer.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Framer X</div></a>
+                  <div class="tool-body">强大的移动应用原型设计工具</div></div>
+              </div>
+
+             <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Axure8.0.html" target="_blank">
+                    <div class="tool-img" style="background-image: linear-gradient(45deg, #7924b3, #c514f2);">
+                      <img data-src="https://images.qijishow.com/DT/t_Axure8.0.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Axure 8</div></a>
+                  <div class="tool-body">一个专业的快速原型设计工具</div></div>
+              </div>
+
+              <div class="sm-6 md-4 lg-3"><a name="jhsj" />
+                <div class="tool">
+                  <a class="tool-heading"  href="https://marvelapp.com/" target="_blank">
+                    <div class="tool-img" style="background: #ffffff; ">
+                      <img data-src="https://images.qijishow.com/DT/t_marvelapp.png">
+                      <div class="tool-platform" >
+                        <i class="iconfont icon-pingguo" style="color: #585858;" ></i>
+                        <i class="iconfont icon-win" style="color: #585858;"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Marvel</div></a>
+                  <div class="tool-body">免费的桌面和移动端原型图设计工具</div></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+   </div>
+
+   <div class="main-wrap" id="main-wraps">
+
+        <a id="交互设计"></a>
+        <div class="panel">
+          <div class="panel-title card">
+            <i class="czs-hand-touch"></i>交互设计</div>
+            <div class="careful">
+            <i class="icon iconfont icon-zhuyi" style="font-size: 17px;float: left;"></i> <a target="_blank" href="https://www.qijishow.com/down/help/index.html" >安装出错，无法安装？</a> </div>
+
+          <div class="panel-body">
+            <div class="row">
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Principle.html" target="_blank">
+                    <div class="tool-img" style="background: #22a7f0 ">
+                      <img data-src="https://images.qijishow.com/DT/t_principle.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Principle</div></a>
+                  <div class="tool-body">快速交互动画的原型软件</div></div>
+              </div>
+
+                <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Drama.html" target="_blank">
+                    <div class="tool-img" style="background: linear-gradient(45deg, #101114, #4f525d)">
+                      <img data-src="https://images.qijishow.com/DT/1-1-drama.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Drama</div></a>
+                  <div class="tool-body">原型交互动画和设计三合一</div></div>
+              </div>
+
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Framer.html" target="_blank">
+                    <div class="tool-img" style="background: #000000 ">
+                      <img data-src="https://images.qijishow.com/DT/t_framer.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Framer</div></a>
+                  <div class="tool-body">移动交互原型框架软件</div></div>
+              </div>
+
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="Flinto.html" target="_blank">
+                    <div class="tool-img" style="background-image:linear-gradient(45deg, #3e7cd4, #17a3e8)">
+                      <img data-src="https://images.qijishow.com/DT/t_flinto.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Flinto</div></a>
+                  <div class="tool-body">交互式设计神器</div></div>
+              </div>
+
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="http://www.protopie.cn/" target="_blank">
+                    <div class="tool-img" style="background: #ff6157 ">
+                      <img data-src="https://images.qijishow.com/DT/t_protopie.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">ProtoPie</div></a>
+                  <div class="tool-body">韩国原型交互动效设计软件</div></div>
+              </div>
+
+
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="https://atomic.io/v2/" target="_blank">
+                    <div class="tool-img" style="background: #262c38 ">
+                      <img data-src="https://images.qijishow.com/DT/t_atomic.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Atomic</div></a>
+                  <div class="tool-body">快捷的在线原型制作工具，有Sketch版插件</div></div>
+              </div>
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading"  href="http://origami.design/" target="_blank">
+                    <div class="tool-img" style="background: #1b2127 ">
+                      <img data-src="https://images.qijishow.com/DT/t_origami.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                        <i class="iconfont icon-win"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Origami</div></a>
+                  <div class="tool-body">APP逻辑交互原型制作工具</div></div>
+              </div>
+              <div class="sm-6 md-4 lg-3">
+                <div class="tool">
+                  <a class="tool-heading" href="https://kiteapp.co/" target="_blank">
+                    <div class="tool-img" style="background: #12cc6d ">
+                      <img data-src="https://images.qijishow.com/DT/t_kiteapp.png">
+                      <div class="tool-platform">
+                        <i class="iconfont icon-pingguo"></i>
+                      </div>
+                    </div>
+                    <div class="tool-title">Kite</div></a>
+                  <div class="tool-body">新款强大的交互动画原型工具</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+
+<!-- <div id="ss-dropdown">
+      <a id="ss-dropdown-toggle" target="_blank" href="message.html">心愿单</a>
+  </div>
+  <div id="ss-down">
+      <a id="ss-text">我们一直都在努力收录设计类软件，可以把你想要的软件提交上来。</a>
+  </div>
+        <div id="remind" style="color: #b5b5b5;text-decoration: none;font-size: 10px;font-family: 微软雅黑;font-weight: 100;margin-top: 70px;">
+            <p style="margin: 0 0 4px;text-align: center;">
+                <a href="#">声明：本站并不以盈利为目的，所有软件均来源于网络，旨在推广设计相关在国内的应用。</a>
+            </p>
+            <p style="text-align: center;">
+             <a href="#">如本站的内容对您的权利造成了影响，请发邮件至fshow@qijishow.com, 我们会在第一时间将涉及版权的内容进行删除。</a>
+            </p>
+        </div>
+  </div> -->
+
+	<!--[if !IE]><!-->	
+        <div id="copy" class="copyright">
+            <p style="padding-left: 3%;padding-top: 14px; margin: 0 0 10px;">
+                <a href="https://beian.miit.gov.cn">蜀ICP备14021999号-1</a>
+            </p>
+            <p style=" padding-left: 3%;">
+                Copyright © qijishow.com. All Rights Reserved.
+            </p>
+        </div>
+<!--<![endif]-->
+
+
+<!--通用底部信息-->
+
+    <div class="copyrights_wz" ><br>
+        <a href="https://www.qijishow.com/" target="_blank" title="奇迹秀首页" >奇迹秀首页</a>　
+        <a href="https://www.qijishow.com/About_us.htm" target="_blank" title="关于我们">关于我们</a>　
+        <a href="https://www.qijishow.com/down/Disclaimer.html" target="_blank" title="免责声明" >免责声明</a>
+
+<div id="footer">
+<div class="autocw">
+<div id="flinks">
+<p id="banquan" style="color: #808080;"><a href="https://beian.miit.gov.cn" target="_blank" style="color: #808080;">蜀ICP备14021999号-1   </a>Copyright (c)  <a target="_blank" href="https://www.qijishow.com/" style=" color: #808080; ">qijishow.com.</a> All Rights Reserved </p></div></div></div>
+
+
+<div></div>
+
+ <script src="assets/js/main.js"></script>
+<script>
+//手机打开浮层
+$("#dd").click(function(){
+	//var s = $(".dropdown").css('overflow');
+	/*if ( s=='hidden' ){
+		$(".dropdown").css('overflow','visible');
+	}else{
+		$(".dropdown").css('overflow','hidden');
+	}*/
+	var s = $(this).hasClass('active');
+	if ( s ){
+		$(this).removeClass('active');
+	}else{
+		$(this).addClass('active');
+	}
+	var b = $(".search_top").css('display');
+
+	if ( b=='block'  ){$(".search_top").css('display','none');
+}
+})
+$(".so_icon").click(function(){
+	var s = $(".search_top").css('display');
+	if ( s=='none' ){
+		$(".search_top").css('display','block');
+	}else{
+		$(".search_top").css('display','none');
+	}
+	var b = $("#dd").hasClass('active');
+	if ( b  ){$("#dd").removeClass('active');
+	}
+})
+</script>
+<script type="text/javascript">
+ var imgs = document.querySelectorAll('img');
+
+        //用来判断bound.top<=clientHeight的函数，返回一个bool值
+        function isIn(el) {
+            var bound = el.getBoundingClientRect();
+            var clientHeight = window.innerHeight;
+            return bound.top <= clientHeight;
+        } 
+        //检查图片是否在可视区内，如果不在，则加载
+        function check() {
+            Array.from(imgs).forEach(function(el){
+                if(isIn(el)){
+                    loadImg(el);
+                }
+            })
+        }
+        function loadImg(el) {
+            if(!el.src){
+                var source = el.dataset.src;
+                el.src = source;
+            }
+        }
+        window.onload = window.onscroll = function () { //onscroll()在滚动条滚动的时候触发
+            check();
+        }
+</script>
+
+<!-- 
+ <div id="spig" class="spig">
+    <div id="message">加载中……</div>
+    <div id="mumu" class="mumu"></div>
+</div>
+ --> 
+<link rel="stylesheet" type="text/css" href="https://www.qijishow.com/css/xiumiao.css">
+<script type="text/javascript" src="assets/js/xiumiaoo.js"></script>
+<!--<script type="text/javascript">
+var isindex=true;var title="";var visitor="亲爱的秀咪"
+</script>-->
+<script type="text/javascript">
+var isindex=false;var title="秀喵驾到啦！";var visitor="亲爱的秀密们";
+</script>
+	    <script type="text/javascript" charset="utf-8" src="https://www.qijishow.com/down/assets/js/headBand.min.js"></script><a href="https://baidurank.aizhan.com/" target="_blank"><script type="text/javascript" src="https://baidurank.aizhan.com/api/br?domain=qijishow.com&style=text" charset="utf-8"></script></a>
+  
+
+  <a href="https://baidurank.aizhan.com/" target="_blank"><script type="text/javascript" src="https://baidurank.aizhan.com/api/br?domain=qijishow.com&style=text" charset="utf-8"></script></a>
+  
+      <script src="./site-search.js"></script>
+
+
+</body>
+</html>

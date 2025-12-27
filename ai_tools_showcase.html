@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI工具集 - 智能工具展示平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            max-width: 400px;
+            margin: 0 30px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item {
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .main-content {
+            padding: 40px 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .tool-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .tool-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            margin-right: 15px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .tool-info {
+            flex: 1;
+        }
+
+        .tool-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .tool-url {
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .tool-url:hover {
+            color: #667eea;
+        }
+
+        .tool-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
+        .tool-footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tool-category {
+            font-size: 12px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-weight: 500;
+        }
+
+        .tool-link {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .tool-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .stats {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 5px;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .search-box {
+                margin: 0;
+                max-width: none;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🤖 AI工具集</div>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="搜索AI工具..." id="searchInput">
+                </div>
+                <nav class="nav-menu">
+                    <a href="#hot" class="nav-item active">🔥 热门推荐</a>
+                    <a href="#office" class="nav-item">📊 AI办公</a>
+                    <a href="#efficiency" class="nav-item">🚀 效率提升</a>
+                    <a href="#coding" class="nav-item">💻 AI编程</a>
+                    <a href="#other" class="nav-item">🛠️ 其他工具</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="stats">
+                <h2 style="color: white; margin-bottom: 20px;">📊 AI工具统计</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalTools">0</span>
+                        <div class="stat-label">总工具数</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalCategories">0</span>
+                        <div class="stat-label">分类数量</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="updatedTime">0</span>
+                        <div class="stat-label">更新时间</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="loading">正在加载AI工具数据...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>🤖 AI工具集 - 智能工具展示平台 | 最后更新: <span id="lastUpdate"></span></p>
+                <p style="margin-top: 10px; font-size: 14px;">探索AI工具，提升工作效率，开启智能未来</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="markdown_loader.js"></script>
+    <script src="ai_tools_manager.js"></script>
+    <script>
+        // 页面管理器实例
+        let pageManager;
+        let dataLoader;
+
+        // 从markdown文件加载数据
+        async function loadMarkdownData() {
+            try {
+                // 初始化数据加载器
+                dataLoader = new MarkdownDataLoader();
+                const parsedData = await dataLoader.loadMarkdownData();
+                
+                // 更新页面管理器的数据
+                if (pageManager && pageManager.toolsManager) {
+                    pageManager.toolsManager.toolsData = parsedData;
+                    pageManager.toolsManager.filteredData = { ...parsedData };
+                    pageManager.renderPage();
+                }
+                
+                console.log('✅ 成功加载markdown数据');
+            } catch (error) {
+                console.error('❌ 加载markdown数据失败:', error);
+                
+                // 使用备用数据
+                if (pageManager && pageManager.toolsManager) {
+                    const fallbackData = dataLoader.getFallbackData();
+                    pageManager.toolsManager.toolsData = fallbackData;
+                    pageManager.toolsManager.filteredData = { ...fallbackData };
+                    pageManager.renderPage();
+                }
+            }
+        }
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // 初始化页面管理器
+                pageManager = new PageManager();
+                
+                // 尝试加载markdown数据
+                await loadMarkdownData();
+                
+                console.log('🚀 AI工具展示页面初始化完成');
+            } catch (error) {
+                console.error('页面初始化失败:', error);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI资讯 - 黑曜石科技工坊</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .news-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .news-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: all 0.3s;
+        }
+        .news-card:hover {
+            border-color: var(--accent-color);
+            transform: translateX(5px);
+        }
+        .news-date {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .news-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        .news-excerpt {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .news-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .news-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-cube"></i>
+                <span>黑曜石科技工坊</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">AI工具</a>
+                <a href="news.html" class="active">AI资讯</a>
+                <a href="#">更多领域</a>
+            </nav>
+            <div class="header-right">
+                <a href="https://github.com/duguBoss/hyswebsite" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container" style="display: block;">
+        <div class="news-container">
+            <section class="hero" style="margin-top: 0;">
+                <h1>最新 AI 动态</h1>
+                <p>实时掌握人工智能领域的突破与进展。</p>
+            </section>
+
+            <div class="news-list">
+                <article class="news-card">
+                    <div class="news-date">2024-05-14</div>
+                    <h2 class="news-title">OpenAI 发布 GPT-4o：实时语音视频交互新纪元</h2>
+                    <p class="news-excerpt">OpenAI 最新发布的旗舰模型 GPT-4o ("o"代表 omni) 具备原生的音频、视觉和文本推理能力，响应速度极快，实现了真正的人机实时交互。</p>
+                    <a href="#" class="news-link">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">2024-05-15</div>
+                    <h2 class="news-title">Google I/O 2024：全线产品集成 Gemini</h2>
+                    <p class="news-excerpt">Google 在年度开发者大会上宣布，将 Gemini 模型深度集成到 Search、Photos、Workspace 和 Android 等核心产品中，全面发力 AI Agent。</p>
+                    <a href="#" class="news-link">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">2024-04-18</div>
+                    <h2 class="news-title">Llama 3 开源发布：最强开源大模型易主</h2>
+                    <p class="news-excerpt">Meta 发布了 Llama 3 系列模型，在多项基准测试中超越了同级别的开源模型，甚至在部分指标上逼近 GPT-4。</p>
+                    <a href="#" class="news-link">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">2024-02-16</div>
+                    <h2 class="news-title">Sora 惊艳亮相：文生视频达到新高度</h2>
+                    <p class="news-excerpt">OpenAI 发布的 Sora 模型能够生成长达一分钟的高清视频，画面一致性和物理模拟能力令人震撼。</p>
+                    <a href="#" class="news-link">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 黑曜石科技工坊 (HysWebsite). All rights reserved.</p>
+        <p>本项目由 <a href="https://github.com/duguBoss/hyswebsite" target="_blank">duguBoss</a> 维护</p>
+    </footer>
+</body>
+</html>
